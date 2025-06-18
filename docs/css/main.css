@@ -29,7 +29,7 @@
 }
 
 .slide-text {
-    display: none;
+    /* display: none; */
     margin-top: 1em;
     padding: 1em;
     text-align: left;
@@ -145,7 +145,7 @@
 }
 
 .slide-text {
-    display: none;
+    /* display: none; */
 }
 
 #language-selector {
@@ -158,6 +158,11 @@
     z-index: 1000;
     display: inline-block;
     font-family: sans-serif;
+    text-align: center;
+}
+
+#language-selector button {
+    margin: 5px
 }
 
 a {
@@ -176,4 +181,14 @@ a {
 .slides a:hover,
 .slides a:active {
     text-decoration: dashed;
+}
+
+section a span {
+    display: none;
+}
+
+section a span.active-lang {
+    display: block;
+    padding: 5px;
+    text-align: center;
 }
