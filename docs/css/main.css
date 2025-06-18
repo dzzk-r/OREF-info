@@ -73,3 +73,9 @@
 [data-lang].active-lang .slide-text{
   display: block;
 }
+
+.slides img {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin:auto;
+}
