@@ -166,3 +166,10 @@
     display: inline-block;
     font-family: sans-serif;
 }
+
+.slides section a span {
+    display: none;
+}
+.slides section a span.active-lang {
+    display: block;
+}
