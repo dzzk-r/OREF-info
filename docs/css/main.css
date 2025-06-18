@@ -80,7 +80,7 @@
     display: block;
 }
 
-.slides .slide-text img {
+.slides .slide-text + img {
     max-width: 90vw;
     max-height: 90vh;
     margin: auto;
