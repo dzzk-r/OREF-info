@@ -170,6 +170,7 @@
 .slides a span {
     display: none;
 }
+
 .slides a span.active-lang {
     display: block;
 }
