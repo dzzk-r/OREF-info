@@ -62,3 +62,10 @@ overflow-y: auto;
 .slide-text {
 display: none;
 }
+
+#language-selector {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 2vw;
+}
