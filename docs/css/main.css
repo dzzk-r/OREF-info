@@ -28,12 +28,6 @@
     padding-top: 200px;
 }
 
-.slide-img {
-    max-width: 90vw;
-    max-height: 90vh;
-    margin: auto;
-}
-
 .slide-text {
     font-size: 1rem;
     margin-top: 1em;
@@ -86,7 +80,7 @@
     display: block;
 }
 
-.slides img {
+.slides .slide-text img {
     max-width: 90vw;
     max-height: 90vh;
     margin: auto;
