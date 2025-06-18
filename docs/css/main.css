@@ -1,50 +1,46 @@
 .topbar {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-height: 40px;
-background: #111;
-z-index: 1000;
-display: flex;
-align-items: center;
-padding: 0 10px;
-font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: #111;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-family: sans-serif;
 }
 .topbar a {
-color: white;
-margin-right: 15px;
-text-decoration: none;
-font-size: 14px;
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 14px;
 }
 .topbar a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
-.reveal {margin-top: 40px;padding-top: 200px;}
+.reveal {
+  margin-top: 40px;padding-top: 200px;
+}
 .slide-img {
-max-width: 100%;
-max-height: 90vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin:auto;
 }
 .slide-text {
-font-size: 1rem;
-margin-top: 1em;
-padding: 1em;
-background: #f7f7f7;
-border-radius: 10px;
-text-align: left;
+  font-size: 1rem;
+  margin-top: 1em;
+  padding: 1em;
+  background: #f7f7f7;
+  border-radius: 10px;
+  text-align: left;
 }
 .slide-text p {
-margin: 0.4em 0;
-line-height: 1.5;
+  margin: 0.4em 0;
+  line-height: 1.5;
 }
-*/
-/*
-.slides section {
-/* position: relative */
-}
-
 .slides section .slide-text {
-/* position: absolute; */
 bottom: 20px;
 left: 20px;
 right: 20px;
@@ -56,27 +52,24 @@ line-height: 1.5;
 max-height: 80vh;
 overflow-y: auto;
 }
-*/
 .slide-text {
-display: none;
+  display: none;
 }
 
 #language-selector {
-    position: fixed;
-    left: 0;
-    right: 0;
-    min-height: 160px;
-    width: 100vw;
-    background: #111;
-    z-index: 1000;
-    display: inline-block;
-    font-family: sans-serif;
+  position: fixed;
+  left: 0;
+  right: 0;
+  min-height: 160px;
+  width: 100vw;
+  background: #111;
+  z-index: 1000;
+  display: inline-block;
+  font-family: sans-serif;
 }
-
 [data-lang] {
     display:none;
 }
-
-[data-lang].active-lang {
+[data-lang].active-lang .slide-text{
   display: block;
 }
