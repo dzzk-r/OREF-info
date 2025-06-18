@@ -32,8 +32,6 @@
     font-size: 1rem;
     margin-top: 1em;
     padding: 1em;
-    background: #f7f7f7;
-    border-radius: 10px;
     text-align: left;
 }
 
@@ -41,6 +39,11 @@
     display: none;
     margin: 0.4em 0;
     line-height: 1.5;
+}
+
+.slides section {
+  background: #f7f7f7;
+  border-radius: 10px;
 }
 
 .slides section .slide-text {
