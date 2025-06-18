@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
   <style>
-    .topbar {
+    /* .topbar {
       position: fixed;
       top: 0;
       left: 0;
@@ -48,6 +48,24 @@
     .slide-text p {
         margin: 0.4em 0;
         line-height: 1.5;
+    } */
+
+    .reveal {
+        position: relative
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+        max-height: 80vh;
+        overflow-y: auto;
     }
   </style>
 </head>
