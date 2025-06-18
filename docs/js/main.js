@@ -10,7 +10,11 @@ const setLanguage = (lang) => {
 };
 
 document.querySelectorAll('[data-set-lang]').forEach(btn => {
-    btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-set-lang')));
+    btn.addEventListener('click', () => {
+        setLanguage(btn.getAttribute('data-set-lang'));
+        console.log(lang, '!?');
+
+    });
 });
 
 // при загрузке страницы

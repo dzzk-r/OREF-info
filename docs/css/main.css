@@ -41,16 +41,16 @@
   line-height: 1.5;
 }
 .slides section .slide-text {
-bottom: 20px;
-left: 20px;
-right: 20px;
-background-color: rgba(255, 255, 255, 0.85);
-padding: 1rem;
-border-radius: 8px;
-font-size: 16px;
-line-height: 1.5;
-max-height: 80vh;
-overflow-y: auto;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 .slide-text {
   display: none;
@@ -67,7 +67,7 @@ overflow-y: auto;
   display: inline-block;
   font-family: sans-serif;
 }
-[data-lang] {
+.slide-text [data-lang] {
     display:none;
 }
 [data-lang].active-lang .slide-text{
