@@ -80,12 +80,11 @@
     display: block;
 }
 
-.slides .slide-text + img {
+.slides img {
     max-width: 90vw;
-    max-height: 90vh;
-    margin: auto;
+    width: auto;
+    margin: 0 auto;
 }
-
 
 .topbar {
     position: fixed;
@@ -115,11 +114,6 @@
 .reveal {
     margin-top: 40px;
     padding-top: 200px;
-}
-
-.slide-img {
-    max-width: 100%;
-    max-height: 90vh;
 }
 
 .slide-text {
