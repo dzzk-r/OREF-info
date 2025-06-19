@@ -1,3 +1,4 @@
+/*
 .topbar {
     position: fixed;
     top: 0;
@@ -157,11 +158,14 @@ a {
 
 .slides a {
     display: block;
+    width: 50%;
     font-weight: 700;
     text-decoration: none;
     margin: 25px;
+    padding: 10px;
     color: #186699;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .slides a:hover,
@@ -193,4 +197,139 @@ section a span.active-lang {
 
 .slides img.app {
     width: 30px;
+}
+*/
+
+.topbar a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px
+}
+
+.topbar a:hover {
+    text-decoration: underline
+}
+
+.slide-text p,.slide-text p[data-lang] {
+    margin: .4em 0;
+    line-height: 1.5
+}
+
+.slides section {
+    background: #f7f7f7;
+    border-radius: 10px
+}
+
+.slides section .slide-text {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255,255,255,.85);
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    max-height: 80vh;
+    overflow-y: auto
+}
+
+.slide-text p[data-lang] {
+    display: none
+}
+
+.slide-text p.active-lang,[data-lang].active-lang .slide-text,a {
+    display: block
+}
+
+.slides img {
+    max-width: 90vw;
+    width: auto;
+    margin: 0 auto
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #111;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: sans-serif
+}
+
+.reveal {
+    margin-top: 40px;
+    padding-top: 200px
+}
+
+.slide-text {
+    font-size: 1rem;
+    margin-top: 1em;
+    padding: 1em;
+    background: #f7f7f7;
+    border-radius: 10px;
+    text-align: left
+}
+
+#language-selector,.slides a {
+    font-family: sans-serif;
+    text-align: center
+}
+
+#language-selector {
+    display: inline-block;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #111
+}
+
+#language-selector button {
+    margin: 5px
+}
+
+.slides a {
+    display: block;
+    width: 50%;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 25px;
+    padding: 10px;
+    color: #186699
+}
+
+.slides a:active,.slides a:hover {
+    text-decoration: dashed
+}
+
+section a span {
+    display: none
+}
+
+section a span.active-lang {
+    display: block;
+    padding: 5px;
+    text-align: center
+}
+
+@media only screen and (min-width:1280px) {
+    .slides section {
+        margin: auto
+    }
+
+    .slides section,.slides section img {
+        max-width: 600px;
+        width: auto
+    }
+}
+
+.slides img.app {
+    width: 30px
 }
