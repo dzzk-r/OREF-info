@@ -204,3 +204,7 @@ section a span.active-lang {
         width: auto
     }
 }
+
+.slides img.app {
+    width: 30px;
+}
