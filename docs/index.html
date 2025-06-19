@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>OREF Safety Info — Multi-language Emergency Help</title>
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.json?v=2" />
     <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -32,16 +32,20 @@
     <!-- ...OG -->
 
     <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
-    <link rel="stylesheet" href="css/main.css">
-
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css?v=2">
+    
+    <script src="js/main.js?v=2"></script>
     <script data-goatcounter="https://dzzk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <script>
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("service-worker.js");
         }
     </script>
-
+    <script>
+        if (!location.search.includes("v=")) {
+            location.href = location.href + "?v=2";
+        }
+    </script>
     <!--
       <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
       <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
