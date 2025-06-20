@@ -60,8 +60,8 @@ section a span.active-lang {
 
 .slides section {
     background: #f7f7f7;
-    border-radius: 10px
-    text-align: center;
+    border-radius: 10px;
+    text-align: center
 }
 
 .slide-text p[data-lang],section a span {
@@ -130,12 +130,24 @@ section a span.active-lang {
 }
 
 .slides section.qr {
-    min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slides section.qr img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
 }
 
 .slides section img {
-    max-width: calc(100% - 40px * 2);
-    margin: 40px;
+    max-width: calc(100% - 40px*2);
+    margin: 40px
 }
 
 @media only screen and (min-width:1280px) {
@@ -143,8 +155,13 @@ section a span.active-lang {
         margin: auto
     }
 
-    .slides section,.slides section img {
+    .slides section,
+    .slides section img {
         max-width: 600px;
-        width: auto;
+        width: auto
+    }
+
+    .slides section.qr {
+        min-height: calc(100vh - 40px);
     }
 }
