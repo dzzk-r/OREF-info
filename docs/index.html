@@ -52,6 +52,18 @@
     -->
 </head>
 <body>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({ action: 'skipWaiting' });
+    }
+  </script>
 
 <div class="topbar">
   <a href="https://github.com/dzzk-r/OREF-info" target="_blank" rel="noopener noreferrer" title="View source on GitHub">GitHub</a>
