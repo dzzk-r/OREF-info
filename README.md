@@ -2,8 +2,8 @@
     # OREF-info
     # Short shelter instructions 
 -->
-# App Ofline Version
-![Download Android APK](https://github.com/dzzk-r/OREF-info/blob/main/docs/OREF-Info-Offline-v3.apk?raw=true)
+## 📲 Offline App Version
+![Download APK](https://img.shields.io/badge/APK-download-green) [Download from GitHub](https://github.com/dzzk-r/OREF-info/raw/main/docs/OREF-Info-Offline-v3.apk?raw=true)
 
 🇮🇱 עברית | 🇬🇧 English | 🇷🇺 Русский | 🇸🇦 العربية | 🇹🇭 ภาษาไทย | 🇵🇭 Tagalog | 🇪🇹 አማርኛ | 🇫🇷 Français | 🇺🇦 Українська | 🇮🇳 हिंदी | 🇨🇳 中文 (简体)
 
