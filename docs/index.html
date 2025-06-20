@@ -445,6 +445,37 @@
             <img src="img/oref-info-qr.png" alt="this webpage">
         </section>
     </div>
+
+    <form id="feedbackForm">
+    <label for="message">Send us a message:</label><br />
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Type here..."></textarea><br />
+    <button type="submit">Send to Slack</button>
+    </form>
+
+    <script>
+    document.getElementById('feedbackForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const message = document.getElementById('message').value;
+        if (!message) {
+        alert('Message cannot be empty');
+        return;
+        }
+
+        await fetch('https://hooks.slack.com/services/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', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            text: `\uD83D\uDCEC New feedback from OREF-info:\n${message}`
+        })
+        });
+
+        alert('Message sent! Thank you.');
+        document.getElementById('message').value = '';
+    });
+    </script>
 </div>
 </body>
 </html>
