@@ -12,6 +12,7 @@ slides section .slide-text {
 }
 
 .slides img {
+    max-width: 90vw;
     width: auto;
     margin: 0 auto
 }
@@ -59,7 +60,7 @@ section a span.active-lang {
 
 .slides section {
     background: #f7f7f7;
-    border-radius: 10px;
+    border-radius: 10px
     text-align: center;
 }
 
@@ -128,15 +129,18 @@ section a span.active-lang {
     text-decoration: dashed
 }
 
-.slides section img.qr {
-    width: 85%;
+.slides section.qr {
+    min-height: 100vh;
+}
+
+.slides section img {
+    max-width: calc(100% - 40px * 2);
     margin: 40px;
 }
 
 @media only screen and (min-width:1280px) {
     .slides section {
-        margin: auto;
-        text-align: center;
+        margin: auto
     }
 
     .slides section,.slides section img {
