@@ -2,13 +2,17 @@
     # OREF-info
     # Short shelter instructions 
 -->
-## 📲 Offline App Version
-![Download APK](https://img.shields.io/badge/APK-download-green) [Download from GitHub](https://github.com/dzzk-r/OREF-info/raw/main/docs/OREF-Info-Offline-v3.apk?raw=true)
+🇮🇱 עברית | 🇬🇧 English | 🇷🇺 Русский | 🇸🇦 العربية | 🇹🇭 ภาษาไทย | 🇵🇭 Tagalog | 🇪🇹 አማርኛ | 🇫🇷 Français | 🇺🇦 Українська | 🇮🇳 हिंदी | 🇨🇳 中文 (简体) | 🇳🇵 नेपाली | 🇪🇷 ትግርኛ | 🇷🇴 Română | 🇪🇸 Español
 
-🇮🇱 עברית | 🇬🇧 English | 🇷🇺 Русский | 🇸🇦 العربية | 🇹🇭 ภาษาไทย | 🇵🇭 Tagalog | 🇪🇹 አማርኛ | 🇫🇷 Français | 🇺🇦 Українська | 🇮🇳 हिंदी | 🇨🇳 中文 (简体)
+
+## 📲 Offline App Version
+- [Download from GitHub](https://github.com/dzzk-r/OREF-info/raw/main/docs/OREF-Info-Offline-v3.apk?raw=true) ![Download APK](https://img.shields.io/badge/APK-download-green) 
 
 ## 📲 1. Update «Home Front Command»
-https://play.google.com/store/apps/details?id=com.alert.meserhadash
+- [Google Play](https://play.google.com/store/apps/details?id=com.alert.meserhadash) ![Google](https://img.shields.io/endpoint?color=green&logo=google-play&logoColor=green&url=https%3A%2F%2Fplay.cuzi.workers.dev%2Fplay%3Fi%3Dcom.alert.meserhadash%26gl%3DUS%26hl%3Den%26l%3DAndroid%26m%3D%24version)
+- [iTunes](https://apps.apple.com/il/app/israel-home-front-command/id1542010719) ![Apple](https://img.shields.io/itunes/v/1542010719)
+
+---
 
 **🇮🇱 עברית:** עדכנו את אפליקציית פיקוד העורף כדי לקבל התרעות בזמן אמת.
 
