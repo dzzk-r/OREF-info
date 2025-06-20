@@ -31,7 +31,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 更新“国土防卫指挥部”应用程序以接收实时警报。
 
-![Update OREF App.](<Pasted image 20250618191223-1.png>)
+![Update OREF App.](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide2.png?raw=true)
 
 ---
 
@@ -59,7 +59,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 避难所的门必须完全关闭。不要让它们半开或敞开。
 
-![Don't leave door open durng exploisons](<Pasted image 20250618191533.png>)
+![Don't leave door open durng exploisons](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide3.png?raw=true)
 
 ---
 
@@ -87,7 +87,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 听到爆炸声后请至少等待10分钟再离开避难所。
 
-![Wait 10 minutes after all of exploisions](<Pasted image 20250618192218.png>)
+![Wait 10 minutes after all of exploisions](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide4.png?raw=true)
 
 ---
 
@@ -115,7 +115,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 鼓励孩子们即使没有警报，也要待在避难所里玩耍。
 
-![Let kids play inside shelter and not outside entrence](<Pasted image 20250618192500.png>)
+![Let kids play inside shelter and not outside entrence](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide5.png?raw=true)
 
 ---
 
@@ -143,7 +143,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 检查周围是否有年长邻居需要帮助进入避难所。
 
-![Assist for elderrly, pregnant, disabled people](<Pasted image 20250618192716.png>)
+![Assist for elderrly, pregnant, disabled people](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide6.png?raw=true)
 
 ---
 
@@ -171,7 +171,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 年长者独居？无法关窗或关门？拨打1230 — “Yedidim” 志愿者会来帮忙。
 
-![Need some help? Call "Yeddim"](<Pasted image 20250618200139.png>)
+![Need some help? Call "Yeddim"](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide7.png?raw=true)
 
 ---
 ## ❓ 7. What to do if you don’t hear the siren
@@ -198,7 +198,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 如果你没听到警报，请在听到爆炸声或接到应用通知时进入避难所。
 
-![Come inside if you are not sure](<Pasted image 20250618200331.png>)
+![Come inside if you are not sure](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide8.png?raw=true)
 
 ---
 
@@ -226,7 +226,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 请提前给手机充电。确保避难所内有电源插座可用。
 
-![Charege your phone in advance](<Pasted image 20250618200520.png>)
+![Charege your phone in advance](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide9.png?raw=true)
 
 ---
 ## 🚫 9. Do Not Film or Stand by the Window
@@ -253,7 +253,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 不要拍摄爆炸或站在窗边。
 
-![Don't measure rockets speed [~2km/sec]](<Pasted image 20250618200809.png>)
+![Don't measure rockets speed [~2km/sec]](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide10.png?raw=true)
 
 ---
 
@@ -281,7 +281,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 提前准备应急包：水、身份证、药物、充电器、手电筒。
 
-![Prepare emergency kit](<Pasted image 20250618201045.png>)
+![Prepare emergency kit](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide11.png?raw=true)
 
 ---
 ## 🅿️ 12. Underground Parking is Not a Shelter
@@ -308,7 +308,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 地下停车场不是避难所，除非被官方标记为避难所。
 
-![Parking is not a shelter](<Pasted image 20250618201228.png>)
+![Parking is not a shelter](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide12.png?raw=true)
 
 ---
 
@@ -336,7 +336,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 楼梯间无法抵御重型导弹 — 比外面好，但不安全。
 
-![Stairwell is less secure than shelter](<Pasted image 20250618201414.png>)
+![Stairwell is less secure than shelter](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide13.png?raw=true)
 
 ---
 
@@ -364,7 +364,7 @@ https://play.google.com/store/apps/details?id=com.alert.meserhadash
 
 **🇨🇳 中文 (简体):** 不知道该往哪里跑？拨打106 — 市政当局会告诉你最近的避难所。
 
-![Where to Go?](<Pasted image 20250618201732.png>)
+![Where to Go?](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide14.png?raw=true)
 
 ---
 
@@ -403,6 +403,6 @@ Conflit dans l’abri ? Vous n’arrivez pas à convaincre de fermer la porte ? 
 **🇨🇳 中文 (简体):**  
 避难所里发生争执？劝不动别人关门？请拨打 104 — 以色列后方司令部的代表将会说明并协助调解。
 
-![Conflict in a shelter? 104!](<Pasted image 20250618201938.png>)
+![Conflict in a shelter? 104!](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide15.png?raw=true)
 
 ---
