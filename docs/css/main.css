@@ -61,6 +61,7 @@ section a span.active-lang {
 .slides section {
     background: #f7f7f7;
     border-radius: 10px
+    text-align: center;
 }
 
 .slide-text p[data-lang],section a span {
