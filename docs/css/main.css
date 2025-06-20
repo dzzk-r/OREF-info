@@ -129,6 +129,11 @@ section a span.active-lang {
     text-decoration: dashed
 }
 
+.slides section img.qr {
+    max-width: 120px;
+    margin: 40px;
+}
+
 @media only screen and (min-width:1280px) {
     .slides section {
         margin: auto
