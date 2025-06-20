@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>OREF Safety Info — Multi-language Emergency Help</title>
-    <link rel="manifest" href="manifest.json?v=2" />
+    <link rel="manifest" href="manifest.json?v=3" />
     <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -37,9 +37,9 @@
     <!-- ...OG -->
 
     <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
-    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/main.css?v=3">
     
-    <script src="js/main.js?v=2"></script>
+    <script src="js/main.js?v=3"></script>
     <script data-goatcounter="https://dzzk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <script>
         if ("serviceWorker" in navigator) {
@@ -48,13 +48,35 @@
     </script>
     <script>
         if (!location.search.includes("v=")) {
-            location.href = location.href + "?v=2";
+            location.href = location.href + "?v=3";
         }
     </script>
-    <!--
-      <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
-      <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css">
-    -->
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+        navigator.serviceWorker.getRegistrations().then(registrations => {
+            // Unregister old service workers
+            for (const registration of registrations) {
+            registration.unregister();
+            }
+
+            // Register new one
+            navigator.serviceWorker.register('./sw.js')
+            .then(reg => {
+                console.log('Service Worker registered with scope:', reg.scope);
+            })
+            .catch(err => {
+                console.warn('Service Worker registration failed:', err);
+            });
+        });
+        });
+    }
+    </script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./js/sw.js");
+        }
+    </script>
 </head>
 <body>
     <script>
