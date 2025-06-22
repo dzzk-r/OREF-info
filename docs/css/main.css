@@ -109,8 +109,8 @@ section a span.active-lang {
     margin-top: 1em;
     padding: 1em;
     background: #f7f7f7;
-    border-radius: 10px;
-    text-align: left
+    border-radius: 10px 10px 0 0;
+    text-align: left;
 }
 
 #language-selector,.slides a {
@@ -165,7 +165,7 @@ section a span.active-lang {
 
     .slides section,
     .slides section img {
-        max-width: 600px;
+        max-width: 513px;
         width: auto;
     }
 
