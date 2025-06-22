@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="manifest" href="manifest.json?v=4" />
+    <link rel="manifest" href="manifest.json?v=5.1" />
     <meta name="theme-color" content="#fdd835" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="OREF Safety Info — Multi-language Emergency Help">
@@ -32,17 +32,17 @@
     <!-- ...OG -->
 
     <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
-    <link rel="stylesheet" href="css/main.css?v=5">
+    <link rel="stylesheet" href="css/main.css?v=5.1">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@600&family=Noto+Sans+Hebrew&display=swap" rel="stylesheet" />
 
-    <script src="js/main.js?v=5"></script>
+    <script src="js/main.js?v=5.1"></script>
 
     <script data-goatcounter="https://dzzk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
     <script>
         const url = new URL(location.href);
         if (!url.searchParams.has('v')) {
-            url.searchParams.set('v', '5');
+            url.searchParams.set('v', '5.1');
             location.href = url.toString();
         }
     </script>
@@ -59,7 +59,7 @@
 <div class="topbar">
   <a href="https://github.com/dzzk-r/OREF-info" target="_blank" rel="noopener noreferrer" title="View source on GitHub">GitHub</a>
   <a href="slides.pdf" target="_blank" rel="noopener noreferrer" title="Download safety slides in PDF">Download PDF</a>
-  <a href="./OREF-Info-Offline-v3.apk" download title="Install offline version for Android (.apk)">📲 Download OREF-Info Android</a>
+  <a href="./OREFinfo-Offline-v5.1.apk" download title="Install offline version for Android (.apk)">📲 Download OREF-Info Android</a>
   <a href="#" title="Share this page" onclick="shareOrCopy(); return false;">🔗 Share This Slide</a>
 </div>
 
@@ -84,8 +84,8 @@
 
 <div class="reveal">
     <div class="slides">
-        <section style="text-align: center; background: transparent;">
-            <img src="images/oref.png" width="25px" />
+        <section class="oref-section" style="text-align: center; background: transparent">
+            <img class="oref-logo" src="images/oref.png"/>
 
             <div class="dwnl" style="display: flex;">
                 <a href="https://play.google.com/store/apps/details?id=com.alert.meserhadash" target="_blank">
@@ -101,242 +101,242 @@
 
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> עדכנו את אפליקציית פיקוד העורף כדי לקבל התרעות בזמן אמת.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Update the Home Front Command app to receive real-time alerts.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Обновите приложение Пикуд ха-Ореф, чтобы получать оповещения в реальном времени.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> قم بتحديث تطبيق الجبهة الداخلية لتلقي التنبيهات في الوقت الفعلي.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> อัปเดตแอปพลิเคชัน Home Front Command เพื่อรับการแจ้งเตือนทันที</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> I-update ang Home Front Command app para makatanggap ng real-time na babala.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> የ"Home Front Command" መተግበሪያውን አዘምኑ በቅርብ ጊዜ ማሳወቂያዎችን ለማግኘት።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Mettez à jour l'application du Commandement du Front Intérieur pour recevoir les alertes en temps réel.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Оновіть додаток Командування тилу, щоб отримувати сповіщення в реальному часі.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> रीयल-टाइम अलर्ट प्राप्त करने के लिए होम फ्रंट कमांड ऐप को अपडेट करें।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 更新“国土防卫指挥部”应用程序以接收实时警报。</p>
+                <p data-lang="he" dir="rtl"> עדכנו את אפליקציית פיקוד העורף כדי לקבל התרעות בזמן אמת.</p>
+                <p data-lang="en">Update the Home Front Command app to receive real-time alerts.</p>
+                <p data-lang="ru">Обновите приложение Пикуд ха-Ореф, чтобы получать оповещения в реальном времени.</p>
+                <p data-lang="ar" dir="rtl"> قم بتحديث تطبيق الجبهة الداخلية لتلقي التنبيهات في الوقت الفعلي.</p>
+                <p data-lang="th">อัปเดตแอปพลิเคชัน Home Front Command เพื่อรับการแจ้งเตือนทันที</p>
+                <p data-lang="tl">I-update ang Home Front Command app para makatanggap ng real-time na babala.</p>
+                <p data-lang="am">የ"Home Front Command" መተግበሪያውን አዘምኑ በቅርብ ጊዜ ማሳወቂያዎችን ለማግኘት።</p>
+                <p data-lang="fr">Mettez à jour l'application du Commandement du Front Intérieur pour recevoir les alertes en temps réel.</p>
+                <p data-lang="uk">Оновіть додаток Командування тилу, щоб отримувати сповіщення в реальному часі.</p>
+                <p data-lang="hi">रीयल-टाइम अलर्ट प्राप्त करने के लिए होम फ्रंट कमांड ऐप को अपडेट करें।</p>
+                <p data-lang="zh">更新“国土防卫指挥部”应用程序以接收实时警报。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> वास्तविक-समयको चेतावनी प्राप्त गर्न Home Front Command एप्लिकेसन अपडेट गर्नुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> እዋናዊ ማስጠንቀቂያታት ንምቕባል መተግበሪ ሆም ፍሮንት ኮማንድ ኣዘምኑ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Actualizați aplicația Home Front Command pentru a primi alerte în timp real.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Actualiza la aplicación de Home Front Command para recibir alertas en tiempo real.</p>
+                <p data-lang="ne">वास्तविक-समयको चेतावनी प्राप्त गर्न Home Front Command एप्लिकेसन अपडेट गर्नुहोस्।</p>
+                <p data-lang="ti">እዋናዊ ማስጠንቀቂያታት ንምቕባል መተግበሪ ሆም ፍሮንት ኮማንድ ኣዘምኑ።</p>
+                <p data-lang="ro">Actualizați aplicația Home Front Command pentru a primi alerte în timp real.</p>
+                <p data-lang="es">Actualiza la aplicación de Home Front Command para recibir alertas en tiempo real.</p>
             </div>
 
             <img src="images/slide1.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> הדלתות בממ"ד צריכות להיסגר לחלוטין. אל תשאירו דלת פתוחה או סדוקה.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Shelter doors must be fully closed. Don’t leave them ajar or open.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Двери в мамаде должны быть плотно закрыты. Не оставляйте их приоткрытыми.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> يجب إغلاق أبواب الملجأ بالكامل. لا تتركها مفتوحة أو مواربة.
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> ต้องปิดประตูห้องหลบภัยให้สนิท อย่าปล่อยให้เปิดแง้ม
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Ang mga pinto ng silungan ay kailangang ganap na maisara. Huwag hayaang bukas o nakabukas ng bahagya.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> የመጠለያ ቤቶች ደረቦች በሙሉ መዝጋት አለባቸው። በቁልፍ አትተዉ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Les portes de l'abri doivent être complètement fermées. Ne les laissez pas entrouvertes.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Двері в укритті мають бути повністю зачинені. Не залишайте їх відчиненими.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> शरण स्थलों के दरवाजे पूरी तरह से बंद होने चाहिए। इन्हें खुला या अधखुला न छोड़ें।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 避难所的门必须完全关闭。不要让它们半开或敞开。</p>
+                <p data-lang="he" dir="rtl"> הדלתות בממ"ד צריכות להיסגר לחלוטין. אל תשאירו דלת פתוחה או סדוקה.</p>
+                <p data-lang="en">Shelter doors must be fully closed. Don’t leave them ajar or open.</p>
+                <p data-lang="ru">Двери в мамаде должны быть плотно закрыты. Не оставляйте их приоткрытыми.</p>
+                <p data-lang="ar" dir="rtl"> يجب إغلاق أبواب الملجأ بالكامل. لا تتركها مفتوحة أو مواربة.
+                <p data-lang="th">ต้องปิดประตูห้องหลบภัยให้สนิท อย่าปล่อยให้เปิดแง้ม
+                <p data-lang="tl">Ang mga pinto ng silungan ay kailangang ganap na maisara. Huwag hayaang bukas o nakabukas ng bahagya.</p>
+                <p data-lang="am">የመጠለያ ቤቶች ደረቦች በሙሉ መዝጋት አለባቸው። በቁልፍ አትተዉ።</p>
+                <p data-lang="fr">Les portes de l'abri doivent être complètement fermées. Ne les laissez pas entrouvertes.</p>
+                <p data-lang="uk">Двері в укритті мають бути повністю зачинені. Не залишайте їх відчиненими.</p>
+                <p data-lang="hi">शरण स्थलों के दरवाजे पूरी तरह से बंद होने चाहिए। इन्हें खुला या अधखुला न छोड़ें।</p>
+                <p data-lang="zh">避难所的门必须完全关闭。不要让它们半开或敞开。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> शरणस्थलका ढोका पूर्ण रूपमा बन्द हुनुपर्छ। खुल्ला वा आधा खोलिएको अवस्थामा नछोड्नुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> እንክብካቤ ቤት ደረቦት ብኹሉ ክዕጽዉ ኣለዉ። ክፉት ወይ ሓፍቲ ክፉት ኣትተዉን።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Ușile adăpostului trebuie să fie complet închise. Nu le lăsați întredeschise sau deschise.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Las puertas del refugio deben estar completamente cerradas. No las dejes entreabiertas ni abiertas.</p>
+                <p data-lang="ne">शरणस्थलका ढोका पूर्ण रूपमा बन्द हुनुपर्छ। खुल्ला वा आधा खोलिएको अवस्थामा नछोड्नुहोस्।</p>
+                <p data-lang="ti">እንክብካቤ ቤት ደረቦት ብኹሉ ክዕጽዉ ኣለዉ። ክፉት ወይ ሓፍቲ ክፉት ኣትተዉን።</p>
+                <p data-lang="ro">Ușile adăpostului trebuie să fie complet închise. Nu le lăsați întredeschise sau deschise.</p>
+                <p data-lang="es">Las puertas del refugio deben estar completamente cerradas. No las dejes entreabiertas ni abiertas.</p>
             </div>
 
             <img src="images/slide3.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> המתינו לפחות 10 דקות לאחר הישמע הפיצוץ, ורק אז צאו מהממ"ד.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Wait at least 10 minutes after the explosion sound before leaving the shelter.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Подождите не менее 10 минут после звука взрыва, прежде чем покидать убежище.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> انتظر 10 دقائق على الأقل بعد سماع الانفجار قبل مغادرة الملجأ.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> รออย่างน้อย 10 นาทีหลังจากเสียงระเบิดก่อนออกจากที่หลบภัย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Maghintay ng hindi bababa sa 10 minuto pagkatapos ng pagsabog bago umalis sa silungan.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> ፍንዳታውን ከሰማችሁ በኋላ ቢያንስ 10 ደቂቃዎች ይጠብቁ ከዚያ እንደገና ውጡ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Attendez au moins 10 minutes après l'explosion avant de quitter l'abri.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Зачекайте щонайменше 10 хвилин після вибуху, перш ніж залишити укриття.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> विस्फोट की आवाज़ के बाद कम से कम 10 मिनट प्रतीक्षा करें, फिर आश्रय छोड़ें।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 听到爆炸声后请至少等待10分钟再离开避难所。</p>
+                <p data-lang="he" dir="rtl"> המתינו לפחות 10 דקות לאחר הישמע הפיצוץ, ורק אז צאו מהממ"ד.</p>
+                <p data-lang="en">Wait at least 10 minutes after the explosion sound before leaving the shelter.</p>
+                <p data-lang="ru">Подождите не менее 10 минут после звука взрыва, прежде чем покидать убежище.</p>
+                <p data-lang="ar" dir="rtl"> انتظر 10 دقائق على الأقل بعد سماع الانفجار قبل مغادرة الملجأ.</p>
+                <p data-lang="th">รออย่างน้อย 10 นาทีหลังจากเสียงระเบิดก่อนออกจากที่หลบภัย</p>
+                <p data-lang="tl">Maghintay ng hindi bababa sa 10 minuto pagkatapos ng pagsabog bago umalis sa silungan.</p>
+                <p data-lang="am">ፍንዳታውን ከሰማችሁ በኋላ ቢያንስ 10 ደቂቃዎች ይጠብቁ ከዚያ እንደገና ውጡ።</p>
+                <p data-lang="fr">Attendez au moins 10 minutes après l'explosion avant de quitter l'abri.</p>
+                <p data-lang="uk">Зачекайте щонайменше 10 хвилин після вибуху, перш ніж залишити укриття.</p>
+                <p data-lang="hi">विस्फोट की आवाज़ के बाद कम से कम 10 मिनट प्रतीक्षा करें, फिर आश्रय छोड़ें।</p>
+                <p data-lang="zh">听到爆炸声后请至少等待10分钟再离开避难所。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> विस्फोटको आवाजपछि आश्रय स्थल छाड्नुअघि कम्तीमा १० मिनेट प्रतीक्षा गर्नुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ድንጋይ ኣምሲኻ ከሰምዐካ በኋላ ቢያንስ 10 ደቒቕ ትጠብቕ። ከዚ ኣብ እንክብካቤ ቤት ንውጽእ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Așteptați cel puțin 10 minute după ce auziți explozia înainte de a părăsi adăpostul.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Espere al menos 10 minutos después de oír la explosión antes de salir del refugio.</p>
+                <p data-lang="ne">विस्फोटको आवाजपछि आश्रय स्थल छाड्नुअघि कम्तीमा १० मिनेट प्रतीक्षा गर्नुहोस्।</p>
+                <p data-lang="ti">ድንጋይ ኣምሲኻ ከሰምዐካ በኋላ ቢያንስ 10 ደቒቕ ትጠብቕ። ከዚ ኣብ እንክብካቤ ቤት ንውጽእ።</p>
+                <p data-lang="ro">Așteptați cel puțin 10 minute după ce auziți explozia înainte de a părăsi adăpostul.</p>
+                <p data-lang="es">Espere al menos 10 minutos después de oír la explosión antes de salir del refugio.</p>
             </div>
 
             <img src="images/slide4.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> עודדו את הילדים להישאר בתוך הממ"ד, גם אם אין אזעקה.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Encourage children to play inside the shelter even when there's no alarm.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Поощряйте детей оставаться в мамаде даже при отсутствии тревоги.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> شجع الأطفال على البقاء داخل الملجأ حتى لو لم تكن هناك صفارات إنذار.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> กระตุ้นให้เด็ก ๆ อยู่เล่นในห้องหลบภัย แม้ไม่มีเสียงเตือนภัย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Hikayatin ang mga bata na manatili at maglaro sa loob ng silungan kahit walang alarma.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> ልጆች በማንኛውም የአስጠንቀቂያ ማስታወቂያ ባለመኖሩ በመጠለያው ውስጥ እንዲቆዩ አነሳሳት።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Encouragez les enfants à jouer à l'intérieur de l'abri, même sans alarme.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Заохочуйте дітей залишатися в укритті, навіть без сигналу тривоги.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> बच्चों को आश्रय में खेलने के लिए प्रोत्साहित करें, भले ही अलार्म न बजा हो।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 鼓励孩子们即使没有警报，也要待在避难所里玩耍。</p>
+                <p data-lang="he" dir="rtl"> עודדו את הילדים להישאר בתוך הממ"ד, גם אם אין אזעקה.</p>
+                <p data-lang="en">Encourage children to play inside the shelter even when there's no alarm.</p>
+                <p data-lang="ru">Поощряйте детей оставаться в мамаде даже при отсутствии тревоги.</p>
+                <p data-lang="ar" dir="rtl"> شجع الأطفال على البقاء داخل الملجأ حتى لو لم تكن هناك صفارات إنذار.</p>
+                <p data-lang="th">กระตุ้นให้เด็ก ๆ อยู่เล่นในห้องหลบภัย แม้ไม่มีเสียงเตือนภัย</p>
+                <p data-lang="tl">Hikayatin ang mga bata na manatili at maglaro sa loob ng silungan kahit walang alarma.</p>
+                <p data-lang="am">ልጆች በማንኛውም የአስጠንቀቂያ ማስታወቂያ ባለመኖሩ በመጠለያው ውስጥ እንዲቆዩ አነሳሳት።</p>
+                <p data-lang="fr">Encouragez les enfants à jouer à l'intérieur de l'abri, même sans alarme.</p>
+                <p data-lang="uk">Заохочуйте дітей залишатися в укритті, навіть без сигналу тривоги.</p>
+                <p data-lang="hi">बच्चों को आश्रय में खेलने के लिए प्रोत्साहित करें, भले ही अलार्म न बजा हो।</p>
+                <p data-lang="zh">鼓励孩子们即使没有警报，也要待在避难所里玩耍。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> चेतावनी नबजेको भए पनि बालबालिकालाई आश्रयस्थलभित्रै खेल्न प्रोत्साहित गर्नुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ንንኡሳት እንኳ እንታይ ምልክት ዘይብሉ ኣብ መጠለያ ክነብሱ ኣነሳስሱ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Încurajați copiii să se joace în adăpost chiar și atunci când nu este alarmă.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Anime a los niños a quedarse y jugar dentro del refugio, incluso si no hay una alarma.</p>
+                <p data-lang="ne">चेतावनी नबजेको भए पनि बालबालिकालाई आश्रयस्थलभित्रै खेल्न प्रोत्साहित गर्नुहोस्।</p>
+                <p data-lang="ti">ንንኡሳት እንኳ እንታይ ምልክት ዘይብሉ ኣብ መጠለያ ክነብሱ ኣነሳስሱ።</p>
+                <p data-lang="ro">Încurajați copiii să se joace în adăpost chiar și atunci când nu este alarmă.</p>
+                <p data-lang="es">Anime a los niños a quedarse y jugar dentro del refugio, incluso si no hay una alarma.</p>
             </div>
 
             <img src="images/slide5.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> בדקו אם יש שכנים מבוגרים שזקוקים לעזרה בכניסה לממ"ד.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Check if any elderly neighbors need help getting into the shelter.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Проверьте, не нуждаются ли пожилые соседи в помощи, чтобы попасть в убежище.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> تحقق مما إذا كان هناك جيران مسنون بحاجة إلى مساعدة للدخول إلى الملجأ.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> ตรวจสอบว่าเพื่อนบ้านสูงอายุต้องการความช่วยเหลือในการเข้าไปยังที่หลบภัยหรือไม่</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Tingnan kung may matatandang kapitbahay na kailangan ng tulong para makapasok sa silungan.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> አባላት ያሉበትን መንደር እንደ እርዳታ የሚፈልጉ አረጋዊዎች እንዳሉ ያረጋግጡ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Vérifiez si des voisins âgés ont besoin d’aide pour entrer dans l’abri.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Перевірте, чи не потрібна літнім сусідам допомога з входом до укриття.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> जांचें कि क्या किसी बुज़ुर्ग पड़ोसी को शरण में जाने के लिए मदद चाहिए।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 检查周围是否有年长邻居需要帮助进入避难所。</p>
+                <p data-lang="he" dir="rtl"> בדקו אם יש שכנים מבוגרים שזקוקים לעזרה בכניסה לממ"ד.</p>
+                <p data-lang="en">Check if any elderly neighbors need help getting into the shelter.</p>
+                <p data-lang="ru">Проверьте, не нуждаются ли пожилые соседи в помощи, чтобы попасть в убежище.</p>
+                <p data-lang="ar" dir="rtl"> تحقق مما إذا كان هناك جيران مسنون بحاجة إلى مساعدة للدخول إلى الملجأ.</p>
+                <p data-lang="th">ตรวจสอบว่าเพื่อนบ้านสูงอายุต้องการความช่วยเหลือในการเข้าไปยังที่หลบภัยหรือไม่</p>
+                <p data-lang="tl">Tingnan kung may matatandang kapitbahay na kailangan ng tulong para makapasok sa silungan.</p>
+                <p data-lang="am">አባላት ያሉበትን መንደር እንደ እርዳታ የሚፈልጉ አረጋዊዎች እንዳሉ ያረጋግጡ።</p>
+                <p data-lang="fr">Vérifiez si des voisins âgés ont besoin d’aide pour entrer dans l’abri.</p>
+                <p data-lang="uk">Перевірте, чи не потрібна літнім сусідам допомога з входом до укриття.</p>
+                <p data-lang="hi">जांचें कि क्या किसी बुज़ुर्ग पड़ोसी को शरण में जाने के लिए मदद चाहिए।</p>
+                <p data-lang="zh">检查周围是否有年长邻居需要帮助进入避难所。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> नजिकैको कुनै बृद्ध छिमेकीलाई आश्रयस्थल जान सहयोग चाहिन्छ कि भनेर जाँच गर्नुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ኣብ ዞባኹም ዝምልከት ዘሎም ኣረጋዊ ጎረቤት እንተዘሎም ክትሕግዙልን ፈትኑ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Verificați dacă vreun vecin în vârstă are nevoie de ajutor pentru a intra în adăpost.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Verifica si algún vecino mayor necesita ayuda para entrar al refugio.</p>
+                <p data-lang="ne">नजिकैको कुनै बृद्ध छिमेकीलाई आश्रयस्थल जान सहयोग चाहिन्छ कि भनेर जाँच गर्नुहोस्।</p>
+                <p data-lang="ti">ኣብ ዞባኹም ዝምልከት ዘሎም ኣረጋዊ ጎረቤት እንተዘሎም ክትሕግዙልን ፈትኑ።</p>
+                <p data-lang="ro">Verificați dacă vreun vecin în vârstă are nevoie de ajutor pentru a intra în adăpost.</p>
+                <p data-lang="es">Verifica si algún vecino mayor necesita ayuda para entrar al refugio.</p>
             </div>
 
             <img src="images/slide6.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> אדם מבוגר לבד? לא מצליח לסגור חלון או דלת? חייגו 1230 — מתנדבי "ידידים" יעזרו.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Elderly person alone? Can’t close a window or door? Call 1230 — “Yedidim” volunteers will come to help.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Пожилой человек один? Не может закрыть окно или дверь? Позвоните 1230 — волонтёры “Ядидим” помогут.
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> شخص مسنّ يعيش بمفرده؟ لا يستطيع إغلاق نافذة أو باب؟ اتصل بـ1230 — سيتوجه متطوعو "يدידيم" للمساعدة.
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> ผู้สูงอายุอยู่คนเดียว? ปิดหน้าต่างหรือประตูไม่ได้? โทร 1230 — อาสาสมัคร Yedidim จะมาช่วย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Matanda at mag-isa? Hindi maisara ang bintana o pinto? Tumawag sa 1230 — darating ang mga volunteer ng Yedidim.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> አንድ አንደኛ አረጋዊ ሰው? መስኮት ወይም በር ማዘጋት አይችልም? 1230 ይደውሉ — የ“Yedidim” ተበሳሾች ለመርዳት ይመጣሉ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Personne âgée seule ? Impossible de fermer une fenêtre ou une porte ? Appelez le 1230 — les volontaires de “Yedidim” viendront aider.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Похила людина живе одна? Не може закрити вікно чи двері? Зателефонуйте 1230 — волонтери “Ядидим” допоможуть.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> बुज़ुर्ग अकेले हैं? खिड़की या दरवाज़ा बंद नहीं कर पा रहे? 1230 पर कॉल करें — “Yedidim” स्वयंसेवक मदद के लिए आएँगे।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 年长者独居？无法关窗或关门？拨打1230 — “Yedidim” 志愿者会来帮忙。</p>
+                <p data-lang="he" dir="rtl"> אדם מבוגר לבד? לא מצליח לסגור חלון או דלת? חייגו 1230 — מתנדבי "ידידים" יעזרו.</p>
+                <p data-lang="en">Elderly person alone? Can’t close a window or door? Call 1230 — “Yedidim” volunteers will come to help.</p>
+                <p data-lang="ru">Пожилой человек один? Не может закрыть окно или дверь? Позвоните 1230 — волонтёры “Ядидим” помогут.
+                <p data-lang="ar" dir="rtl"> شخص مسنّ يعيش بمفرده؟ لا يستطيع إغلاق نافذة أو باب؟ اتصل بـ1230 — سيتوجه متطوعو "يدידيم" للمساعدة.
+                <p data-lang="th">ผู้สูงอายุอยู่คนเดียว? ปิดหน้าต่างหรือประตูไม่ได้? โทร 1230 — อาสาสมัคร Yedidim จะมาช่วย</p>
+                <p data-lang="tl">Matanda at mag-isa? Hindi maisara ang bintana o pinto? Tumawag sa 1230 — darating ang mga volunteer ng Yedidim.</p>
+                <p data-lang="am">አንድ አንደኛ አረጋዊ ሰው? መስኮት ወይም በር ማዘጋት አይችልም? 1230 ይደውሉ — የ“Yedidim” ተበሳሾች ለመርዳት ይመጣሉ።</p>
+                <p data-lang="fr">Personne âgée seule ? Impossible de fermer une fenêtre ou une porte ? Appelez le 1230 — les volontaires de “Yedidim” viendront aider.</p>
+                <p data-lang="uk">Похила людина живе одна? Не може закрити вікно чи двері? Зателефонуйте 1230 — волонтери “Ядидим” допоможуть.</p>
+                <p data-lang="hi">बुज़ुर्ग अकेले हैं? खिड़की या दरवाज़ा बंद नहीं कर पा रहे? 1230 पर कॉल करें — “Yedidim” स्वयंसेवक मदद के लिए आएँगे।</p>
+                <p data-lang="zh">年长者独居？无法关窗或关门？拨打1230 — “Yedidim” 志愿者会来帮忙。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> वृद्ध व्यक्ति एक्लै हुनुहुन्छ? झ्याल वा ढोका बन्द गर्न सक्नुहुन्न? 1230 मा कल गर्नुहोस् — “Yedidim” स्वयंसेवकहरू सहायता गर्न आउँछन्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ዓርከይ ሰብ ነቲ ብኣንዲኡ ኣለኹ? መስኮት ወይ ደሓን ምዕጋዝ ኣይከኣልን? 1230 ይደውሉ — ተወካዮም ካብ “Yedidim” ንዝዕጋዝ ይመጽእ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Persoană în vârstă singură? Nu poate închide o fereastră sau o ușă? Sunați la 1230 — voluntarii „Yedidim” vor veni să ajute.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> ¿Persona mayor sola? ¿No puede cerrar una ventana o puerta? Llame al 1230 — los voluntarios de “Yedidim” acudirán a ayudar.</p>
+                <p data-lang="ne">वृद्ध व्यक्ति एक्लै हुनुहुन्छ? झ्याल वा ढोका बन्द गर्न सक्नुहुन्न? 1230 मा कल गर्नुहोस् — “Yedidim” स्वयंसेवकहरू सहायता गर्न आउँछन्।</p>
+                <p data-lang="ti">ዓርከይ ሰብ ነቲ ብኣንዲኡ ኣለኹ? መስኮት ወይ ደሓን ምዕጋዝ ኣይከኣልን? 1230 ይደውሉ — ተወካዮም ካብ “Yedidim” ንዝዕጋዝ ይመጽእ።</p>
+                <p data-lang="ro">Persoană în vârstă singură? Nu poate închide o fereastră sau o ușă? Sunați la 1230 — voluntarii „Yedidim” vor veni să ajute.</p>
+                <p data-lang="es">¿Persona mayor sola? ¿No puede cerrar una ventana o puerta? Llame al 1230 — los voluntarios de “Yedidim” acudirán a ayudar.</p>
             </div>
 
             <img src="images/slide7.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> אם לא שמעתם את האזעקה — היכנסו למרחב המוגן עם השמע פיצוץ או לפי הודעה באפליקציה.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> If you didn’t hear the siren — enter the shelter when you hear a boom or receive a notification from the app.
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Если вы не услышали сирену — зайдите в убежище при звуке взрыва или уведомлении в приложении.
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> إذا لم تسمع صفارة الإنذار — ادخل إلى الملجأ عند سماع الانفجار أو تلقي إشعار بالتطبيق.
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> หากไม่ได้ยินเสียงไซเรน ให้เข้าไปในที่หลบภัยเมื่อได้ยินเสียงระเบิด หรือเมื่อได้รับการแจ้งเตือนจากแอป
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Kung hindi mo narinig ang sirena — pumasok sa silungan kapag may narinig na pagsabog o nakatanggap ng abiso sa app.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> አሽከሬት ከማትሰሙ ጋር — ፍንዳታ ሲሰማ ወይም ከመተግበሪያው ማሳወቂያ ሲደርስ ወደ መጠለያ ይግቡ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Vous n’avez pas entendu la sirène ? Allez dans l’abri en entendant une explosion ou via une alerte de l’application.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Не чули сирену? Заходьте в укриття, почувши вибух або отримавши сповіщення з додатку.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> अगर आप सायरन नहीं सुन पाए — धमाके की आवाज़ सुनते ही या ऐप से सूचना मिलने पर आश्रय लें।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 如果你没听到警报，请在听到爆炸声或接到应用通知时进入避难所。</p>
+                <p data-lang="he" dir="rtl"> אם לא שמעתם את האזעקה — היכנסו למרחב המוגן עם השמע פיצוץ או לפי הודעה באפליקציה.</p>
+                <p data-lang="en">If you didn’t hear the siren — enter the shelter when you hear a boom or receive a notification from the app.
+                <p data-lang="ru">Если вы не услышали сирену — зайдите в убежище при звуке взрыва или уведомлении в приложении.
+                <p data-lang="ar" dir="rtl"> إذا لم تسمع صفارة الإنذار — ادخل إلى الملجأ عند سماع الانفجار أو تلقي إشعار بالتطبيق.
+                <p data-lang="th">หากไม่ได้ยินเสียงไซเรน ให้เข้าไปในที่หลบภัยเมื่อได้ยินเสียงระเบิด หรือเมื่อได้รับการแจ้งเตือนจากแอป
+                <p data-lang="tl">Kung hindi mo narinig ang sirena — pumasok sa silungan kapag may narinig na pagsabog o nakatanggap ng abiso sa app.</p>
+                <p data-lang="am">አሽከሬት ከማትሰሙ ጋር — ፍንዳታ ሲሰማ ወይም ከመተግበሪያው ማሳወቂያ ሲደርስ ወደ መጠለያ ይግቡ።</p>
+                <p data-lang="fr">Vous n’avez pas entendu la sirène ? Allez dans l’abri en entendant une explosion ou via une alerte de l’application.</p>
+                <p data-lang="uk">Не чули сирену? Заходьте в укриття, почувши вибух або отримавши сповіщення з додатку.</p>
+                <p data-lang="hi">अगर आप सायरन नहीं सुन पाए — धमाके की आवाज़ सुनते ही या ऐप से सूचना मिलने पर आश्रय लें।</p>
+                <p data-lang="zh">如果你没听到警报，请在听到爆炸声或接到应用通知时进入避难所。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> यदि तपाईंले साइरन सुन्नुभएन भने — विस्फोटको आवाज सुन्दा वा एपबाट सूचना प्राप्त भएमा आश्रयस्थलमा जानुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ኣሽከሬት ኣይሰምዕካን? ፍንዳታ ምስ ትሰምዕ ወይ ካብ መተግበሪ ማሳወቂ ምስ ትቕበል ወደ መጠለያ ግበ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Nu ați auzit sirena? Intrați în adăpost când auziți o explozie sau primiți o notificare din aplicație.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> ¿No escuchaste la sirena? Entra al refugio al oír una explosión o al recibir una notificación de la aplicación.</p>
+                <p data-lang="ne">यदि तपाईंले साइरन सुन्नुभएन भने — विस्फोटको आवाज सुन्दा वा एपबाट सूचना प्राप्त भएमा आश्रयस्थलमा जानुहोस्।</p>
+                <p data-lang="ti">ኣሽከሬት ኣይሰምዕካን? ፍንዳታ ምስ ትሰምዕ ወይ ካብ መተግበሪ ማሳወቂ ምስ ትቕበል ወደ መጠለያ ግበ።</p>
+                <p data-lang="ro">Nu ați auzit sirena? Intrați în adăpost când auziți o explozie sau primiți o notificare din aplicație.</p>
+                <p data-lang="es">¿No escuchaste la sirena? Entra al refugio al oír una explosión o al recibir una notificación de la aplicación.</p>
             </div>
 
             <img src="images/slide8.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> הטעינו את הסלולרי שלכם מראש. ודאו שיש לכם גישה לחשמל גם בממ"ד.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Charge your phone in advance. Make sure you have access to electricity in the shelter.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Зарядите телефон заранее. Убедитесь, что в убежище есть доступ к розетке.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> اشحن هاتفك مسبقًا. تأكد من توفر الكهرباء داخل الملجأ.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> ชาร์จโทรศัพท์ล่วงหน้า และตรวจสอบว่ามีปลั๊กไฟในที่หลบภัย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> I-charge ang iyong telepono nang maaga. Tiyaking may access sa kuryente sa silungan.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> ስልኩን ቀድሞ ያስነሱ። በመጠለያ ውስጥ የኤሌክትሪክ ተደራሽነት እንዲኖር ያረጋግጡ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Chargez votre téléphone à l’avance. Vérifiez que vous avez une prise électrique dans l’abri.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Заряджайте телефон заздалегідь. Перевірте, чи є доступ до електрики в укритті.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> फोन को पहले से चार्ज कर लें। सुनिश्चित करें कि शरण में बिजली की सुविधा हो।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 请提前给手机充电。确保避难所内有电源插座可用。</p>
+                <p data-lang="he" dir="rtl"> הטעינו את הסלולרי שלכם מראש. ודאו שיש לכם גישה לחשמל גם בממ"ד.</p>
+                <p data-lang="en">Charge your phone in advance. Make sure you have access to electricity in the shelter.</p>
+                <p data-lang="ru">Зарядите телефон заранее. Убедитесь, что в убежище есть доступ к розетке.</p>
+                <p data-lang="ar" dir="rtl"> اشحن هاتفك مسبقًا. تأكد من توفر الكهرباء داخل الملجأ.</p>
+                <p data-lang="th">ชาร์จโทรศัพท์ล่วงหน้า และตรวจสอบว่ามีปลั๊กไฟในที่หลบภัย</p>
+                <p data-lang="tl">I-charge ang iyong telepono nang maaga. Tiyaking may access sa kuryente sa silungan.</p>
+                <p data-lang="am">ስልኩን ቀድሞ ያስነሱ። በመጠለያ ውስጥ የኤሌክትሪክ ተደራሽነት እንዲኖር ያረጋግጡ።</p>
+                <p data-lang="fr">Chargez votre téléphone à l’avance. Vérifiez que vous avez une prise électrique dans l’abri.</p>
+                <p data-lang="uk">Заряджайте телефон заздалегідь. Перевірте, чи є доступ до електрики в укритті.</p>
+                <p data-lang="hi">फोन को पहले से चार्ज कर लें। सुनिश्चित करें कि शरण में बिजली की सुविधा हो।</p>
+                <p data-lang="zh">请提前给手机充电。确保避难所内有电源插座可用。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> फोन पहिले नै चार्ज गर्नुहोस्। आश्रयस्थलमा बिजुली उपलब्ध छ कि छैन पक्का गर्नुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ስልካ ቅድሚ ዘንብል ኣድርገው። ኣብ መጠለያ ኤሌክትሪክ ኣለዎ ዘለዎ ኮይኑ ኣረጋግጹ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Încarcă-ți telefonul din timp. Asigură-te că ai acces la electricitate în adăpost.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Carga tu teléfono con anticipación. Asegúrate de tener acceso a electricidad en el refugio.</p>
+                <p data-lang="ne">फोन पहिले नै चार्ज गर्नुहोस्। आश्रयस्थलमा बिजुली उपलब्ध छ कि छैन पक्का गर्नुहोस्।</p>
+                <p data-lang="ti">ስልካ ቅድሚ ዘንብል ኣድርገው። ኣብ መጠለያ ኤሌክትሪክ ኣለዎ ዘለዎ ኮይኑ ኣረጋግጹ።</p>
+                <p data-lang="ro">Încarcă-ți telefonul din timp. Asigură-te că ai acces la electricitate în adăpost.</p>
+                <p data-lang="es">Carga tu teléfono con anticipación. Asegúrate de tener acceso a electricidad en el refugio.</p>
             </div>
 
             <img src="images/slide9.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> אל תצלמו את הפיצוץ ואל תעמדו ליד החלון.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Do not film the explosion or stand by the window.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Не снимайте взрыв на видео и не стойте у окна.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> لا تقم بتصوير الانفجار أو الوقوف بجانب النافذة.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> อย่าถ่ายวิดีโอระเบิดหรือยืนใกล้หน้าต่าง</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Huwag kumuha ng video ng pagsabog o tumayo malapit sa bintana.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> ፍንዳታውን አትቅረፉ፣ በመስኮት አትቁሙ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Ne filmez pas l'explosion et ne restez pas près des fenêtres.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Не знімайте вибух і не стійте біля вікон.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> विस्फोट का वीडियो न बनाएं और खिड़की के पास खड़े न हों।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 不要拍摄爆炸或站在窗边。</p>
+                <p data-lang="he" dir="rtl"> אל תצלמו את הפיצוץ ואל תעמדו ליד החלון.</p>
+                <p data-lang="en">Do not film the explosion or stand by the window.</p>
+                <p data-lang="ru">Не снимайте взрыв на видео и не стойте у окна.</p>
+                <p data-lang="ar" dir="rtl"> لا تقم بتصوير الانفجار أو الوقوف بجانب النافذة.</p>
+                <p data-lang="th">อย่าถ่ายวิดีโอระเบิดหรือยืนใกล้หน้าต่าง</p>
+                <p data-lang="tl">Huwag kumuha ng video ng pagsabog o tumayo malapit sa bintana.</p>
+                <p data-lang="am">ፍንዳታውን አትቅረፉ፣ በመስኮት አትቁሙ።</p>
+                <p data-lang="fr">Ne filmez pas l'explosion et ne restez pas près des fenêtres.</p>
+                <p data-lang="uk">Не знімайте вибух і не стійте біля вікон.</p>
+                <p data-lang="hi">विस्फोट का वीडियो न बनाएं और खिड़की के पास खड़े न हों।</p>
+                <p data-lang="zh">不要拍摄爆炸或站在窗边。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> विस्फोटको भिडियो नखिच्नुहोस् र झ्यालको छेउमा नउभिनुहोस्।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ፍንዳታ ኣትቅረፍን ኣብ መስኮት ኣትቆምን።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Nu filmați explozia și nu stați lângă fereastră.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> No grabes la explosión ni te pares cerca de la ventana.</p>
+                <p data-lang="ne">विस्फोटको भिडियो नखिच्नुहोस् र झ्यालको छेउमा नउभिनुहोस्।</p>
+                <p data-lang="ti">ፍንዳታ ኣትቅረፍን ኣብ መስኮት ኣትቆምን።</p>
+                <p data-lang="ro">Nu filmați explozia și nu stați lângă fereastră.</p>
+                <p data-lang="es">No grabes la explosión ni te pares cerca de la ventana.</p>
             </div>
 
             <img src="images/slide10.png"/>
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> הכינו תיק חירום מראש: מים, תעודות, תרופות, מטען, פנס.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Prepare an emergency kit with water, ID, medications, charger, flashlight.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Соберите тревожный чемоданчик: вода, документы, лекарства, зарядка, фонарик.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> جهز حقيبة طوارئ فيها ماء، هوية، أدوية، شاحن، مصباح يدوي.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> เตรียมกระเป๋าฉุกเฉินพร้อมน้ำ บัตรประจำตัว ยา ที่ชาร์จ ไฟฉาย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Ihanda ang emergency bag: tubig, ID, gamot, charger, flashlight.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> የአደጋ ቦርሳ ዝግጁ ያድርጉ፡ ውሃ፣ መታወቂያ፣ መድሃኒቶች፣ መንደቢያ፣ መብራት።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Préparez un kit d’urgence : eau, papiers, médicaments, chargeur, lampe de poche.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Підготуйте тривожну валізу: вода, документи, ліки, зарядка, ліхтарик.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> आपातकालीन बैग तैयार रखें: पानी, पहचान पत्र, दवाएँ, चार्जर, टॉर्च।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 提前准备应急包：水、身份证、药物、充电器、手电筒。</p>
+                <p data-lang="he" dir="rtl"> הכינו תיק חירום מראש: מים, תעודות, תרופות, מטען, פנס.</p>
+                <p data-lang="en">Prepare an emergency kit with water, ID, medications, charger, flashlight.</p>
+                <p data-lang="ru">Соберите тревожный чемоданчик: вода, документы, лекарства, зарядка, фонарик.</p>
+                <p data-lang="ar" dir="rtl"> جهز حقيبة طوارئ فيها ماء، هوية، أدوية، شاحن، مصباح يدوي.</p>
+                <p data-lang="th">เตรียมกระเป๋าฉุกเฉินพร้อมน้ำ บัตรประจำตัว ยา ที่ชาร์จ ไฟฉาย</p>
+                <p data-lang="tl">Ihanda ang emergency bag: tubig, ID, gamot, charger, flashlight.</p>
+                <p data-lang="am">የአደጋ ቦርሳ ዝግጁ ያድርጉ፡ ውሃ፣ መታወቂያ፣ መድሃኒቶች፣ መንደቢያ፣ መብራት።</p>
+                <p data-lang="fr">Préparez un kit d’urgence : eau, papiers, médicaments, chargeur, lampe de poche.</p>
+                <p data-lang="uk">Підготуйте тривожну валізу: вода, документи, ліки, зарядка, ліхтарик.</p>
+                <p data-lang="hi">आपातकालीन बैग तैयार रखें: पानी, पहचान पत्र, दवाएँ, चार्जर, टॉर्च।</p>
+                <p data-lang="zh">提前准备应急包：水、身份证、药物、充电器、手电筒。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> आपतकालीन झोला तयार गर्नुहोस्: पानी, परिचयपत्र, औषधी, चार्जर, टर्चलाइट।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ኣብ ቅድሚ ዝምድኦ መንቀጺ ቦርሳ ዝግብኦ፡ ማይ፣ መታወቂያ፣ መድሃኒት፣ ቻርጀር፣ ጓዕዝ መብራሂ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Pregătiți un rucsac de urgență: apă, acte, medicamente, încărcător, lanternă.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Prepara un kit de emergencia con agua, documentos, medicamentos, cargador y linterna.</p>
+                <p data-lang="ne">आपतकालीन झोला तयार गर्नुहोस्: पानी, परिचयपत्र, औषधी, चार्जर, टर्चलाइट।</p>
+                <p data-lang="ti">ኣብ ቅድሚ ዝምድኦ መንቀጺ ቦርሳ ዝግብኦ፡ ማይ፣ መታወቂያ፣ መድሃኒት፣ ቻርጀር፣ ጓዕዝ መብራሂ።</p>
+                <p data-lang="ro">Pregătiți un rucsac de urgență: apă, acte, medicamente, încărcător, lanternă.</p>
+                <p data-lang="es">Prepara un kit de emergencia con agua, documentos, medicamentos, cargador y linterna.</p>
             </div>
 
-            <img src="images/slide11.png" /
+            <img src="images/slide11.png" />
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> חניון תת-קרקעי שלא סומן כמקלט – אינו נחשב מקלט.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> An underground parking lot is not a shelter unless officially marked as one.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Подземная стоянка не считается убежищем, если она не обозначена как таковая официально.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> موقف السيارات تحت الأرض ليس ملجأً إلا إذا تم تصنيفه رسميًا كذلك.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> ที่จอดรถใต้ดินไม่ใช่ที่หลบภัย เว้นแต่จะมีการระบุอย่างเป็นทางการ</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Ang underground parking ay hindi silungan maliban kung opisyal na tinukoy bilang isa.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> ከመሬት በታች የሆነ የመኪና ማቆሚያ እስካልተመረጠ እንደ መጠለያ አይቆጠርም።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Un parking souterrain n'est pas un abri sauf s'il est désigné comme tel officiellement.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Підземний паркінг не є укриттям, якщо він не позначений офіційно.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> अंडरग्राउंड पार्किंग तब तक शरण नहीं है जब तक उसे आधिकारिक रूप से ऐसा घोषित न किया जाए।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 地下停车场不是避难所，除非被官方标记为避难所。</p>
+                <p data-lang="he" dir="rtl"> חניון תת-קרקעי שלא סומן כמקלט – אינו נחשב מקלט.</p>
+                <p data-lang="en">An underground parking lot is not a shelter unless officially marked as one.</p>
+                <p data-lang="ru">Подземная стоянка не считается убежищем, если она не обозначена как таковая официально.</p>
+                <p data-lang="ar" dir="rtl"> موقف السيارات تحت الأرض ليس ملجأً إلا إذا تم تصنيفه رسميًا كذلك.</p>
+                <p data-lang="th">ที่จอดรถใต้ดินไม่ใช่ที่หลบภัย เว้นแต่จะมีการระบุอย่างเป็นทางการ</p>
+                <p data-lang="tl">Ang underground parking ay hindi silungan maliban kung opisyal na tinukoy bilang isa.</p>
+                <p data-lang="am">ከመሬት በታች የሆነ የመኪና ማቆሚያ እስካልተመረጠ እንደ መጠለያ አይቆጠርም።</p>
+                <p data-lang="fr">Un parking souterrain n'est pas un abri sauf s'il est désigné comme tel officiellement.</p>
+                <p data-lang="uk">Підземний паркінг не є укриттям, якщо він не позначений офіційно.</p>
+                <p data-lang="hi">अंडरग्राउंड पार्किंग तब तक शरण नहीं है जब तक उसे आधिकारिक रूप से ऐसा घोषित न किया जाए।</p>
+                <p data-lang="zh">地下停车场不是避难所，除非被官方标记为避难所。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> भूमिगत पार्किङलाई आश्रय मानिँदैन जबसम्म त्यसलाई आधिकारिक रूपमा चिनाइएको छैन।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ከታች ዘለዎ የመኪና መዕረፍ ቦታ እንተዘይተሰናኸ እንተመጠለያ ኣይቆመንን።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> O parcare subterană nu este considerată adăpost dacă nu este marcată oficial ca atare.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Un estacionamiento subterráneo no es un refugio salvo que esté marcado oficialmente como tal.</p>
+                <p data-lang="ne">भूमिगत पार्किङलाई आश्रय मानिँदैन जबसम्म त्यसलाई आधिकारिक रूपमा चिनाइएको छैन।</p>
+                <p data-lang="ti">ከታች ዘለዎ የመኪና መዕረፍ ቦታ እንተዘይተሰናኸ እንተመጠለያ ኣይቆመንን።</p>
+                <p data-lang="ro">O parcare subterană nu este considerată adăpost dacă nu este marcată oficial ca atare.</p>
+                <p data-lang="es">Un estacionamiento subterráneo no es un refugio salvo que esté marcado oficialmente como tal.</p>
             </div>
 
             <img src="images/slide12.png"/>
@@ -344,67 +344,105 @@
 
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> מדרגות אינן מגינות מפני רקטות כבדות – עדיף מהחוץ, אבל לא בטוח.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Stairwells don’t protect against heavy missiles — better than outside, but not safe.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Лестничные пролёты не защищают от тяжёлых ракет. Лучше, чем на улице, но всё равно опасно.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> سلالم الطوارئ لا توفر حماية حقيقية من الصواريخ الثقيلة — أفضل من البقاء في الخارج، لكنها ليست آمنة.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> บันไดหนีไฟไม่สามารถีป้องกันจรวดหนักได้ — ดีกว่าอยู่ข้างนอกแต่ไม่ปลอดภัย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Ang hagdanan ay hindi ligtas mula sa mabibigat na misil — mas mabuti kaysa sa labas pero hindi pa rin ligtas.</p>
-                <p data-lang="am"><strong>🇪🇹 Amharic:</strong> የመያዣያ መደብ ማዎድ ኪብዛድ ሞተር በተናሳ መኬለካያ አያድርግምን．</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Les cages d'escalier ne protègent pas contre les missiles lourds – mieux que dehors, mais dangereux.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Сходові клітки не захищають від ракет. Це краще, ніж надворі, але небезпечно.</p>
-                <p data-lang="hi"><strong>🇮🇳 Hindi:</strong> सीढ़ियाँ भारी मिसाइलों से सुरक्षा नहीं देतीं — बाहर से बेतर, लेकिन सुरक्षित नहीं है।</p>
-                <p data-lang="zh"><strong>🇨🇳 简体中文:</strong> 楼梯间无法抵御重型导弹 — 比外面好，但不安全。</p>
+                <p data-lang="he" dir="rtl"> מדרגות אינן מגינות מפני רקטות כבדות – עדיף מהחוץ, אבל לא בטוח.</p>
+                <p data-lang="en">Stairwells don’t protect against heavy missiles — better than outside, but not safe.</p>
+                <p data-lang="ru">Лестничные пролёты не защищают от тяжёлых ракет. Лучше, чем на улице, но всё равно опасно.</p>
+                <p data-lang="ar" dir="rtl"> سلالم الطوارئ لا توفر حماية حقيقية من الصواريخ الثقيلة — أفضل من البقاء في الخارج، لكنها ليست آمنة.</p>
+                <p data-lang="th">บันไดหนีไฟไม่สามารถีป้องกันจรวดหนักได้ — ดีกว่าอยู่ข้างนอกแต่ไม่ปลอดภัย</p>
+                <p data-lang="tl">Ang hagdanan ay hindi ligtas mula sa mabibigat na misil — mas mabuti kaysa sa labas pero hindi pa rin ligtas.</p>
+                <p data-lang="am">የመያዣያ መደብ ማዎድ ኪብዛድ ሞተር በተናሳ መኬለካያ አያድርግምን．</p>
+                <p data-lang="fr">Les cages d'escalier ne protègent pas contre les missiles lourds – mieux que dehors, mais dangereux.</p>
+                <p data-lang="uk">Сходові клітки не захищають від ракет. Це краще, ніж надворі, але небезпечно.</p>
+                <p data-lang="hi">सीढ़ियाँ भारी मिसाइलों से सुरक्षा नहीं देतीं — बाहर से बेतर, लेकिन सुरक्षित नहीं है।</p>
+                <p data-lang="zh">楼梯间无法抵御重型导弹 — 比外面好，但不安全。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> भर्‍याङहरूले भारी मिसाइलबाट सुरक्षा दिँदैनन् — बाहिरभन्दा राम्रो, तर सुरक्षित होइन।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> መደረቢ መድረኽታት ካብ ከባድ መሳርሒ ፍንዳታ ኣይጠቕሙን — ካብ ወጻኢ ይሕሸሹ እዮም እንተዘይሕፉ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Casa scării nu oferă protecție împotriva rachetelor grele — mai sigur decât afară, dar tot periculos.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> Las escaleras no protegen contra misiles pesados — mejor que estar afuera, pero no seguro.</p>
+                <p data-lang="ne">भर्‍याङहरूले भारी मिसाइलबाट सुरक्षा दिँदैनन् — बाहिरभन्दा राम्रो, तर सुरक्षित होइन।</p>
+                <p data-lang="ti">መደረቢ መድረኽታት ካብ ከባድ መሳርሒ ፍንዳታ ኣይጠቕሙን — ካብ ወጻኢ ይሕሸሹ እዮም እንተዘይሕፉ።</p>
+                <p data-lang="ro">Casa scării nu oferă protecție împotriva rachetelor grele — mai sigur decât afară, dar tot periculos.</p>
+                <p data-lang="es">Las escaleras no protegen contra misiles pesados — mejor que estar afuera, pero no seguro.</p>
             </div>
             <img src="images/slide13.png" alt="Stairwell is not a safe shelter">
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> לא יודעים לאן לרוץ? חייגו 106 – העירייה תכוון אתכם למקלט הקרוב.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Don’t know where to run? Call 106 — the municipality will direct you to the nearest shelter.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Не знаете, куда бежать? Позвоните по номеру 106 — мэрия направит вас к ближайшему убежищу.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> لا تعرف إلى أين تذهب؟ اتصل بـ106 — البلدية سترشدك إلى أقرب ملجأ.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> ไม่รู้จะไปที่ไหน? โทร 106 — เทศบาลจะบอกคุณว่าที่หลบภัยที่ใกล้ที่สุดอยู่ที่ไหน</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> Hindi mo alam kung saan tatakbo? Tumawag sa 106 — ituturo ng munisipyo ang pinakamalapit na silungan.
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> የምትሄዱበትን አታውቁም? 106 ይደውሉ — ከተማው ወደ ቅርብ መጠለያ ያመራችኋል።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Vous ne savez pas où aller ? Appelez le 106 — la municipalité vous orientera vers l’abri le plus proche.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Не знаєте, куди бігти? Зателефонуйте 106 — муніципалітет направить вас до найближчого укриття.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> नहीं जानते कहाँ जाना है? 106 पर कॉल करें — नगर निगम आपको नज़दीकी आश्रय तक मार्गदर्शन करेगा।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 不知道该往哪里跑？拨打106 — 市政当局会告诉你最近的避难所。</p>
+                <p data-lang="he" dir="rtl"> לא יודעים לאן לרוץ? חייגו 106 – העירייה תכוון אתכם למקלט הקרוב.</p>
+                <p data-lang="en">Don’t know where to run? Call 106 — the municipality will direct you to the nearest shelter.</p>
+                <p data-lang="ru">Не знаете, куда бежать? Позвоните по номеру 106 — мэрия направит вас к ближайшему убежищу.</p>
+                <p data-lang="ar" dir="rtl"> لا تعرف إلى أين تذهب؟ اتصل بـ106 — البلدية سترشدك إلى أقرب ملجأ.</p>
+                <p data-lang="th">ไม่รู้จะไปที่ไหน? โทร 106 — เทศบาลจะบอกคุณว่าที่หลบภัยที่ใกล้ที่สุดอยู่ที่ไหน</p>
+                <p data-lang="tl">Hindi mo alam kung saan tatakbo? Tumawag sa 106 — ituturo ng munisipyo ang pinakamalapit na silungan.
+                <p data-lang="am">የምትሄዱበትን አታውቁም? 106 ይደውሉ — ከተማው ወደ ቅርብ መጠለያ ያመራችኋል።</p>
+                <p data-lang="fr">Vous ne savez pas où aller ? Appelez le 106 — la municipalité vous orientera vers l’abri le plus proche.</p>
+                <p data-lang="uk">Не знаєте, куди бігти? Зателефонуйте 106 — муніципалітет направить вас до найближчого укриття.</p>
+                <p data-lang="hi">नहीं जानते कहाँ जाना है? 106 पर कॉल करें — नगर निगम आपको नज़दीकी आश्रय तक मार्गदर्शन करेगा।</p>
+                <p data-lang="zh">不知道该往哪里跑？拨打106 — 市政当局会告诉你最近的避难所。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> कहाँ जानु भन्ने थाहा छैन? 106 मा फोन गर्नुहोस् — नगरपालिकाले तपाईंलाई नजिकको आश्रयस्थलमा लैजानेछ।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ናበይ ክትነውር ኣይፈልጦኻን? ቁጽሪ 106 ደው ኣድርግ — ከተማዊ መንግስቲ ወደ ቀረባ መጠለያ ይመራካ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Nu știi unde să fugi? Sună la 106 — municipalitatea te va ghida către cel mai apropiat adăpost.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> ¿No sabes a dónde correr? Llama al 106 — el municipio te dirigirá al refugio más cercano.</p>
+                <p data-lang="ne">कहाँ जानु भन्ने थाहा छैन? 106 मा फोन गर्नुहोस् — नगरपालिकाले तपाईंलाई नजिकको आश्रयस्थलमा लैजानेछ।</p>
+                <p data-lang="ti">ናበይ ክትነውር ኣይፈልጦኻን? ቁጽሪ 106 ደው ኣድርግ — ከተማዊ መንግስቲ ወደ ቀረባ መጠለያ ይመራካ።</p>
+                <p data-lang="ro">Nu știi unde să fugi? Sună la 106 — municipalitatea te va ghida către cel mai apropiat adăpost.</p>
+                <p data-lang="es">¿No sabes a dónde correr? Llama al 106 — el municipio te dirigirá al refugio más cercano.</p>
             </div>
             <img src="images/slide14.png" />
         </section>
         <section>
             <div class="slide-text">
-                <p data-lang="he" dir="rtl"><strong>🇮🇱 עברית:</strong> יש סכסוך במקלט? לא מצליחים לשכנע לסגור את הדלת? התקשרו ל־104 — נציג פיקוד העורף יכול להסביר ולתווך.</p>
-                <p data-lang="en"><strong>🇬🇧 English:</strong> Is there a conflict in the shelter? Can’t convince someone to close the door? Call 104 — a Home Front Command representative can explain and mediate.</p>
-                <p data-lang="ru"><strong>🇷🇺 Русский:</strong> Конфликт в убежище? Не можете убедить закрыть дверь? Позвоните по 104 — представитель Службы тыла объяснит и поможет уладить ситуацию.</p>
-                <p data-lang="ar" dir="rtl"><strong>🇸🇦 العربية:</strong> يوجد خلاف داخل الملجأ؟ لا يمكنكم إقناع الآخرين بإغلاق الباب؟ اتصلوا بالرقم 104 — سيوضح ممثل الجبهة الداخلية ويوفّق بينكم.</p>
-                <p data-lang="th"><strong>🇹🇭 ภาษาไทย:</strong> มีปัญหาขัดแย้งในที่หลบภัย? เกลี้ยกล่อมให้ปิดประตูไม่ได้? โทร 104 — เจ้าหน้าที่กองบัญชาการแนวหลังจะช่วยอธิบายและไกล่เกลี่ย</p>
-                <p data-lang="tl"><strong>🇵🇭 Tagalog:</strong> May alitan sa silungan? Hindi maipilit ipasara ang pinto? Tumawag sa 104 — magpapaliwanag at mamamagitan ang kinatawan mula sa Home Front Command.</p>
-                <p data-lang="am"><strong>🇪🇹 አማርኛ:</strong> በመጠለያ ውስጥ ግጭት አለ? በር እንዲዘጋ ማሳመን አልተቻለም? 104 ይደውሉ — የወረዳ ጦር መሪ ያስረዳልና ያቀራረብላችሁ።</p>
-                <p data-lang="fr"><strong>🇫🇷 Français:</strong> Conflit dans l’abri ? Vous n’arrivez pas à convaincre de fermer la porte ? Appelezle 104 — un représentant du Commandement de la Défense Intérieure peut vous aider à résoudre la situation.</p>
-                <p data-lang="uk"><strong>🇺🇦 Українська:</strong> Конфлікт у сховищі? Не можете переконати закрити двері? Зателефонуйте 104 — представник Командування тилу допоможе пояснити й вирішити ситуацію.</p>
-                <p data-lang="hi"><strong>🇮🇳 हिंदी:</strong> शरण स्थल में झगड़ा हो गया? किसी को दरवाज़ा बंद करने के लिए मना नहीं पा रहे? 104 पर कॉल करें — होम फ्रंट कमांड का प्रतिनिधि समझाएगा और मदद करेगा।</p>
-                <p data-lang="zh"><strong>🇨🇳 中文 (简体):</strong> 避难所里发生争执？劝不动别人关门？请拨打 104 — 以色列后方司令部的代表将会说明并协助调解。</p>
+                <p data-lang="he" dir="rtl"> יש סכסוך במקלט? לא מצליחים לשכנע לסגור את הדלת? התקשרו ל־104 — נציג פיקוד העורף יכול להסביר ולתווך.</p>
+                <p data-lang="en">Is there a conflict in the shelter? Can’t convince someone to close the door? Call 104 — a Home Front Command representative can explain and mediate.</p>
+                <p data-lang="ru">Конфликт в убежище? Не можете убедить закрыть дверь? Позвоните по 104 — представитель Службы тыла объяснит и поможет уладить ситуацию.</p>
+                <p data-lang="ar" dir="rtl"> يوجد خلاف داخل الملجأ؟ لا يمكنكم إقناع الآخرين بإغلاق الباب؟ اتصلوا بالرقم 104 — سيوضح ممثل الجبهة الداخلية ويوفّق بينكم.</p>
+                <p data-lang="th">มีปัญหาขัดแย้งในที่หลบภัย? เกลี้ยกล่อมให้ปิดประตูไม่ได้? โทร 104 — เจ้าหน้าที่กองบัญชาการแนวหลังจะช่วยอธิบายและไกล่เกลี่ย</p>
+                <p data-lang="tl">May alitan sa silungan? Hindi maipilit ipasara ang pinto? Tumawag sa 104 — magpapaliwanag at mamamagitan ang kinatawan mula sa Home Front Command.</p>
+                <p data-lang="am">በመጠለያ ውስጥ ግጭት አለ? በር እንዲዘጋ ማሳመን አልተቻለም? 104 ይደውሉ — የወረዳ ጦር መሪ ያስረዳልና ያቀራረብላችሁ።</p>
+                <p data-lang="fr">Conflit dans l’abri ? Vous n’arrivez pas à convaincre de fermer la porte ? Appelezle 104 — un représentant du Commandement de la Défense Intérieure peut vous aider à résoudre la situation.</p>
+                <p data-lang="uk">Конфлікт у сховищі? Не можете переконати закрити двері? Зателефонуйте 104 — представник Командування тилу допоможе пояснити й вирішити ситуацію.</p>
+                <p data-lang="hi">शरण स्थल में झगड़ा हो गया? किसी को दरवाज़ा बंद करने के लिए मना नहीं पा रहे? 104 पर कॉल करें — होम फ्रंट कमांड का प्रतिनिधि समझाएगा और मदद करेगा।</p>
+                <p data-lang="zh">避难所里发生争执？劝不动别人关门？请拨打 104 — 以色列后方司令部的代表将会说明并协助调解。</p>
 
-                <p data-lang="ne"><strong>🇳🇵 नेपाली:</strong> आश्रयस्थलमा झगडा छ? ढोका बन्द गर्न कसैलाई सम्झाउन सक्नु भएन? १०४ मा फोन गर्नुहोस् — गृह मोर्चा कमाण्डको प्रतिनिधिले बुझाउने र मिलाउने कार्य गर्न सक्छ।</p>
-                <p data-lang="ti"><strong>🇪🇷 ትግርኛ:</strong> ኣብ መጠለያ ውሽጢ ግንዛቤ ኣለኻ? በር ክዝጋ ክትከኣል ኣይትኽእልን? 104 ደው ኣድርግ — ተወካይ ከም መእተዊ ኣብ መደበኛ ግምጃ ይረዳካ።</p>
-                <p data-lang="ro"><strong>🇷🇴 Română:</strong> Există un conflict în adăpost? Nu puteți convinge pe cineva să închidă ușa? Sunați la 104 — un reprezentant al Comandamentului Apărării Civile poate explica și media.</p>
-                <p data-lang="es"><strong>🇪🇸 Español:</strong> ¿Hay un conflicto en el refugio? ¿No puedes convencer a alguien de cerrar la puerta? Llama al 104 — un representante del Comando del Frente Interno puede explicar y mediar.</p>
+                <p data-lang="ne">आश्रयस्थलमा झगडा छ? ढोका बन्द गर्न कसैलाई सम्झाउन सक्नु भएन? १०४ मा फोन गर्नुहोस् — गृह मोर्चा कमाण्डको प्रतिनिधिले बुझाउने र मिलाउने कार्य गर्न सक्छ।</p>
+                <p data-lang="ti">ኣብ መጠለያ ውሽጢ ግንዛቤ ኣለኻ? በር ክዝጋ ክትከኣል ኣይትኽእልን? 104 ደው ኣድርግ — ተወካይ ከም መእተዊ ኣብ መደበኛ ግምጃ ይረዳካ።</p>
+                <p data-lang="ro">Există un conflict în adăpost? Nu puteți convinge pe cineva să închidă ușa? Sunați la 104 — un reprezentant al Comandamentului Apărării Civile poate explica și media.</p>
+                <p data-lang="es">¿Hay un conflicto en el refugio? ¿No puedes convencer a alguien de cerrar la puerta? Llama al 104 — un representante del Comando del Frente Interno puede explicar y mediar.</p>
             </div>
             <img src="images/slide15.png"/>
         </section>
+<!-- -->
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide16.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide17.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide18.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide19.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide20.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide21.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide22.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide23.png"/>
+        </section>
+        <section>
+            <div class="slide-text"></div>
+            <img src="images/slide24.png"/>
+        </section>
+<!-- -->
         <section class="qr">
             <img src="img/oref-info-qr.png" alt="this webpage">
         </section>
@@ -427,17 +465,18 @@
             </div>
         </section>
     </div>
-    <script type="module">
-        import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-window.prod.mjs';
+</div>
+<script type="module">
+    import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-window.prod.mjs';
 
-        if ('serviceWorker' in navigator) {
-            const wb = new Workbox('./js/sw.js');
-                wb.addEventListener('waiting', () => {
-                wb.messageSkipWaiting();
-            });
+    if ('serviceWorker' in navigator) {
+        const wb = new Workbox('./js/sw.js');
+            wb.addEventListener('waiting', () => {
+            wb.messageSkipWaiting();
+        });
 
-            wb.register();
-        }
-    </script>
+        wb.register();
+    }
+</script>
 </body>
 </html>

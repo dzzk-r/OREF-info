@@ -1,0 +1,49 @@
+# ─── IDE and Editor Files ────────────────────────────
+.idea/
+*.iml
+/OREF-info.iml
+/shelf/
+/workspace.xml
+/httpRequests/
+/jsonSchemas.xml
+/modules.xml
+/misc.xml
+/vcs.xml
+
+# ─── Build System ─────────────────────────────────────
+.gradle/
+build/
+app/
+gradle/
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle
+build.gradle
+
+# ─── Build Artifacts ──────────────────────────────────
+*.aab
+*.apk
+*.idsig
+app-release-*.apk
+manifest-checksum.txt
+
+# ✅ Keep this final offline release APK
+!OREFinfo-Offline-v5.1.apk
+
+# ─── Environment and Metadata ─────────────────────────
+.env
+docs/.env
+store_icon.png
+
+# ─── Node.js ──────────────────────────────────────────
+/node_modules/
+/dist/
+/build/
+
+# ─── macOS ────────────────────────────────────────────
+.DS_Store
+
+# ─── Security ─────────────────────────────────────────
+# Android signing key (DO NOT TRACK)
+android.keystore
