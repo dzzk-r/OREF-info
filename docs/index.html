@@ -3,19 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>OREF Safety Info — Multi-language Emergency Help</title>
-    <link rel="manifest" href="manifest.json?v=4" />
-    <meta http-equiv="Cache-Control" content="no-store" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <meta name="theme-color" content="#fdd835" />
-    <meta name="description" content="Emergency Shelter Info">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="OREF Safety Info — Multi-language Emergency Help">
-    <meta name="description" content="OREF emergency messages translated into 15+ languages. Works offline. Share or download the APK.">
-
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <link rel="manifest" href="manifest.json?v=4" />
+    <meta name="theme-color" content="#fdd835" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="OREF Safety Info — Multi-language Emergency Help">
+    <meta name="description" content="OREF emergency messages translated into 15+ languages. Works offline. Share or download the APK.">
 
     <!-- OG... -->
     <!-- Open Graph / Facebook -->
@@ -26,7 +21,7 @@
     <meta property="og:site_name" content="OREF Safety Info — Multi-language Emergency Help" />
 
     <meta property="og:image" content="https://dzzk-r.github.io/OREF-info/img/og.png">
-    <meta property="screen"
+    <meta property="screen">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -37,60 +32,29 @@
     <!-- ...OG -->
 
     <link rel="icon" href="icons/icon-192.png" sizes="192x192" />
-    <link rel="stylesheet" href="css/main.css?v=4">
-    
-    <script src="js/main.js?v=4"></script>
-    <script data-goatcounter="https://dzzk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
-        }
-    </script>
-    <script>
-        if (!location.search.includes("v=")) {
-            location.href = location.href + "?v=4";
-        }
-    </script>
-    <script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-        navigator.serviceWorker.getRegistrations().then(registrations => {
-            // Unregister old service workers
-            for (const registration of registrations) {
-            registration.unregister();
-            }
+    <link rel="stylesheet" href="css/main.css?v=5">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@600&family=Noto+Sans+Hebrew&display=swap" rel="stylesheet" />
 
-            // Register new one
-            navigator.serviceWorker.register('./js/sw.js')
-            .then(reg => {
-                console.log('Service Worker registered with scope:', reg.scope);
-            })
-            .catch(err => {
-                console.warn('Service Worker registration failed:', err);
-            });
-        });
-        });
-    }
-    </script>
+    <script src="js/main.js?v=5"></script>
+
+    <script data-goatcounter="https://dzzk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
     <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("./js/sw.js");
+        const url = new URL(location.href);
+        if (!url.searchParams.has('v')) {
+            url.searchParams.set('v', '5');
+            location.href = url.toString();
         }
     </script>
+
+    <script src="assets/language.js"></script>
 </head>
 <body>
-    <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function (registrations) {
-        for (let registration of registrations) {
-          registration.unregister();
-        }
-      });
-    }
-    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
-      navigator.serviceWorker.controller.postMessage({ action: 'skipWaiting' });
-    }
-  </script>
+    <noscript>
+        <div style="padding:1em; background:#fff3cd; color:#856404; text-align:center;">
+            ⚠️ This website requires JavaScript to work properly. Please enable it in your browser settings.
+        </div>
+    </noscript>
 
 <div class="topbar">
   <a href="https://github.com/dzzk-r/OREF-info" target="_blank" rel="noopener noreferrer" title="View source on GitHub">GitHub</a>
@@ -467,7 +431,7 @@
         import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-window.prod.mjs';
 
         if ('serviceWorker' in navigator) {
-            const wb = new Workbox('/sw.js');
+            const wb = new Workbox('./js/sw.js');
                 wb.addEventListener('waiting', () => {
                 wb.messageSkipWaiting();
             });

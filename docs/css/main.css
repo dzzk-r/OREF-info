@@ -1,3 +1,16 @@
+:root {
+  --font-display: 'Luckiest Guy', cursive;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+h1, .poster-title {
+  font-family: var(--font-display);
+}
+
+p, .poster-description {
+  font-family: var(--font-body);
+}
+
 slides section .slide-text {
     bottom: 20px;
     left: 20px;
@@ -182,4 +195,14 @@ section a span.active-lang {
     background-color: #222222dd;
     color: #eee;
   }
+}
+
+html[data-lang="he"] .poster-text {
+  direction: rtl;
+  font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+html[data-lang="en"] .poster-text {
+  direction: ltr;
+  font-family: 'Luckiest Guy', cursive;
 }

@@ -1,3 +1,4 @@
+// js/sw.js
 import { registerRoute } from 'workbox-routing';
 import { StaleWhileRevalidate } from 'workbox-strategies';
 import { precacheAndRoute } from 'workbox-precaching';
@@ -6,7 +7,8 @@ precacheAndRoute([
   { url: './', revision: null },
   { url: './index.html', revision: null },
   { url: './css/main.css', revision: null },
-  { url: './OREF-offline-v1.apk', revision: null },
+  { url: '/assets/lang.json', revision: null },
+  { url: './OREF-Info-Offline-v3.apk', revision: null },
   { url: './slides.pdf', revision: null },
   { url: './icons/icon-192.png', revision: null },
   { url: './icons/icon-512.png', revision: null },
