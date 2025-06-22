@@ -1,0 +1,25 @@
+{
+  "name": "OREFinfo",
+  "short_name": "OREFinfo",
+  "start_url": "https://dzzk-r.github.io/OREF-info/?v=5",
+  "theme_color": "#282828",
+  "background_color": "#ffffff",
+  "navigation_color": "#ffe040",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/OREF-info/",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "packageId": "app.oref.info",
+  "host": "dzzk-r.github.io",
+  "fallbackType": "customtabs",
+  "signingKey": {
+    "alias": "key0",
+    "path": "./keystore.jks"
+  }
+}

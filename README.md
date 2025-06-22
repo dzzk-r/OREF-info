@@ -445,3 +445,4 @@ Conflit dans l’abri ? Vous n’arrivez pas à convaincre de fermer la porte ? 
 ---
 
 ![24](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide24.png?raw=true)
+
