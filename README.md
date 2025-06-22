@@ -411,3 +411,37 @@ Conflit dans l’abri ? Vous n’arrivez pas à convaincre de fermer la porte ? 
 ![Conflict in a shelter? 104!](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide15.png?raw=true)
 
 ---
+
+![16](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide16.png?raw=true)
+
+---
+
+![17](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide17.png?raw=true)
+
+---
+
+![18](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide18.png?raw=true)
+
+---
+
+![19](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide19.png?raw=true)
+
+---
+
+![20](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide20.png?raw=true)
+
+---
+
+![21](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide21.png?raw=true)
+
+---
+
+![22](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide22.png?raw=true)
+
+---
+
+![23](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide23.png?raw=true)
+
+---
+
+![24](https://github.com/dzzk-r/OREF-info/blob/main/docs/images/slide24.png?raw=true)

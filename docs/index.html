@@ -59,7 +59,7 @@
 <div class="topbar">
   <a href="https://github.com/dzzk-r/OREF-info" target="_blank" rel="noopener noreferrer" title="View source on GitHub">GitHub</a>
   <a href="slides.pdf" target="_blank" rel="noopener noreferrer" title="Download safety slides in PDF">Download PDF</a>
-  <a href="./OREF-Info-Offline-v3.apk" download title="Install offline version for Android (.apk)">📲 Download OREF-Info Android</a>
+  <a href="./OREF-Info-Offline-v5.apk" download title="Install offline version for Android (.apk)">📲 Download OREF-Info Android</a>
   <a href="#" title="Share this page" onclick="shareOrCopy(); return false;">🔗 Share This Slide</a>
 </div>
 
@@ -317,7 +317,7 @@
                 <p data-lang="es"><strong>🇪🇸 Español:</strong> Prepara un kit de emergencia con agua, documentos, medicamentos, cargador y linterna.</p>
             </div>
 
-            <img src="images/slide11.png" /
+            <img src="images/slide11.png" />
         </section>
         <section>
             <div class="slide-text">
@@ -465,17 +465,18 @@
             </div>
         </section>
     </div>
-    <script type="module">
-        import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-window.prod.mjs';
+</div>
+<script type="module">
+    import { Workbox } from 'https://storage.googleapis.com/workbox-cdn/releases/6.5.4/workbox-window.prod.mjs';
 
-        if ('serviceWorker' in navigator) {
-            const wb = new Workbox('./js/sw.js');
-                wb.addEventListener('waiting', () => {
-                wb.messageSkipWaiting();
-            });
+    if ('serviceWorker' in navigator) {
+        const wb = new Workbox('./js/sw.js');
+            wb.addEventListener('waiting', () => {
+            wb.messageSkipWaiting();
+        });
 
-            wb.register();
-        }
-    </script>
+        wb.register();
+    }
+</script>
 </body>
 </html>
