@@ -1,5 +1,18 @@
 # 📦 CHANGELOG
 
+## [v5.0.0-beta] - 2025-06-22
+### Added
+- navigator.share() with clipboard fallback and toast message
+- GoatCounter analytics for Share button
+- Offline-capable APK with manifest+icons
+- Subtle redesign of topbar and language toggles
+- QR code section and image display improvements
+
+### Upcoming
+- Workbox cache strategy
+- Open Graph / Twitter meta tags
+- Contact form integration via Zapier
+
 ## [v4] - 2025-06-22
 
 ### ✨ Added
