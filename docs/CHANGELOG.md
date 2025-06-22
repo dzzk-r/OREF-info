@@ -1,7 +1,5 @@
 # 📦 CHANGELOG
 
-## [v4] - 2025-06-22
-
 ## [v5.0.0-beta] - 2025-06-22
 ### Added
 - navigator.share() with clipboard fallback and toast message
@@ -14,6 +12,8 @@
 - Workbox cache strategy
 - Open Graph / Twitter meta tags
 - Contact form integration via Zapier
+
+## [v4] - 2025-06-22
 
 ### ✨ Added
 - 🌍 Multilingual toggle system via `[data-set-lang]` and `[data-lang]`.
