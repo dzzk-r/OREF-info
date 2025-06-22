@@ -12,7 +12,7 @@
   "navigationDividerColorDark": "#000000",
   "backgroundColor": "#FFE040",
   "enableNotifications": true,
-  "startUrl": "/OREF-info/?v=5",
+  "startUrl": "/OREF-info/?v=5.1",
   "iconUrl": "https://dzzk-r.github.io/OREF-info/icons/icon.svg",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
