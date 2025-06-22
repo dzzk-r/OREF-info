@@ -3,6 +3,10 @@
     --font-body: 'Montserrat', sans-serif;
 }
 
+html {
+    background-color: #ffe1a9;
+}
+
 h1, .poster-title {
     font-family: var(--font-display);
 }
