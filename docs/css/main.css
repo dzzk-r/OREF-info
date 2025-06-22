@@ -206,3 +206,13 @@ html[data-lang="en"] .poster-text {
   direction: ltr;
   font-family: 'Luckiest Guy', cursive;
 }
+
+.slides section.oref-section {
+  max-width: max-content;
+  background: transparent;
+  text-align: center;
+}
+
+.slides section.oref-section img.oref-logo {
+  max-width: 200px;
+}
