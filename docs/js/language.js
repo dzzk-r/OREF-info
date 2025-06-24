@@ -1,10 +1,12 @@
 // js/language.js
+export const supportedLangs = ['he', 'en', 'ru', 'ar', 'fr', 'uk', 'am', 'tl', 'th', 'hi', 'zh'];
+
 async function applyLanguage(lang = 'en') {
   try {
     const res = await fetch('assets/lang.json');
     const translations = await res.json();
 
-    const langData = translations[lang];
+    const langData = translations.language[lang];
     if (!langData) {
       console.warn(`No translations found for language: ${lang}`);
       return;

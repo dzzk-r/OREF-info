@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/main.css?v=5.1">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@600&family=Noto+Sans+Hebrew&display=swap" rel="stylesheet" />
 
-    <script src="js/main.js?v=5.1"></script>
+    <script type="module" src="js/main.js?v=6.0.0-dev"></script>
 
     <script data-goatcounter="https://dzzk.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
@@ -46,8 +46,6 @@
             location.href = url.toString();
         }
     </script>
-
-    <script src="assets/language.js"></script>
 </head>
 <body>
     <noscript>
@@ -60,7 +58,7 @@
   <a href="https://github.com/dzzk-r/OREF-info" target="_blank" rel="noopener noreferrer" title="View source on GitHub">GitHub</a>
   <a href="slides.pdf" target="_blank" rel="noopener noreferrer" title="Download safety slides in PDF">Download PDF</a>
   <a href="./OREFinfo-Offline-v5.1.apk" download title="Install offline version for Android (.apk)">📲 Download OREF-Info Android</a>
-  <a href="#" title="Share this page" onclick="shareOrCopy(); return false;">🔗 Share This Slide</a>
+  <a href="#" title="Share this page" id="shareLink">🔗 Share This Page</a>
 </div>
 
 <div id="language-selector">
@@ -84,20 +82,6 @@
 
 <div class="reveal">
     <div class="slides">
-        <section class="oref-section" style="text-align: center; background: transparent">
-            <img class="oref-logo" src="images/oref.png"/>
-
-            <div class="dwnl" style="display: flex;">
-                <a href="https://play.google.com/store/apps/details?id=com.alert.meserhadash" target="_blank">
-                    <img src="img/google-play.png" width="30px" class="app">
-                    <span data-lang="" class="">Google Play</span>
-                </a>
-                <a href="https://apps.apple.com/il/app/israel-home-front-command/id1542010719" target="_blank">
-                    <img src="img/app-store.png" width="30px" class="app">
-                    <span data-lang="" class="">Apple</span>
-                </a>
-            </div>
-        </section>
 
         <section>
             <div class="slide-text">
@@ -121,6 +105,24 @@
 
             <img src="images/slide1.png"/>
         </section>
+
+
+        <section class="oref-section" style="text-align: center; background: transparent">
+            <img class="oref-logo" src="images/oref.png"/>
+
+            <div class="dwnl" style="display: flex;">
+                <a href="https://play.google.com/store/apps/details?id=com.alert.meserhadash" target="_blank">
+                    <img src="img/google-play.png" width="30px" class="app">
+                    <span data-lang="" class="">Google Play</span>
+                </a>
+                <a href="https://apps.apple.com/il/app/israel-home-front-command/id1542010719" target="_blank">
+                    <img src="img/app-store.png" width="30px" class="app">
+                    <span data-lang="" class="">Apple</span>
+                </a>
+            </div>
+        </section>
+
+
         <section>
             <div class="slide-text">
                 <p data-lang="he" dir="rtl"> הדלתות בממ"ד צריכות להיסגר לחלוטין. אל תשאירו דלת פתוחה או סדוקה.</p>

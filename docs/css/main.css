@@ -105,7 +105,7 @@ section a span.active-lang {
 
 .reveal {
     margin-top: 40px;
-    padding-top: 200px
+    padding-top: 80px;
 }
 
 .slide-text {
@@ -216,6 +216,7 @@ html[data-lang="en"] .poster-text {
     background: transparent;
     text-align: center;
     margin: auto;
+    padding-top: 100px;
 }
 
 .slides section.oref-section img.oref-logo {

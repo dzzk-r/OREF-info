@@ -9,7 +9,7 @@ precacheAndRoute([
   { url: './css/main.css', revision: null },
   { url: './js/main.js', revision: null },
   { url: './assets/lang.json', revision: null },
-  { url: './assets/language.js', revision: null },
+  { url: './js/language.js', revision: null },
   { url: './OREF-Info-Offline-v3.apk', revision: null },
   { url: './slides.pdf', revision: null },
   { url: './icons/icon-192.png', revision: null },
