@@ -1,33 +1,61 @@
+import { supportedLangs } from './language.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     const setLanguage = (lang) => {
-        document.querySelectorAll('[data-lang]').forEach(el => {
-        if (el.getAttribute('data-lang') === lang) {
-            el.classList.add('active-lang');
-        } else {
-            el.classList.remove('active-lang');
+        if (!supportedLangs.includes(lang)) {
+            console.warn(`Unsupported language: ${lang}. Falling back to 'en'.`);
+            lang = 'en';
         }
+
+        document.querySelectorAll('[data-lang]').forEach(el => {
+            el.classList.toggle('active-lang', el.getAttribute('data-lang') === lang);
         });
+
         localStorage.setItem('lang', lang);
+
+        document.documentElement.setAttribute('lang', lang);
+        document.documentElement.setAttribute('data-lang', lang);
+
+        const currentUrl = new URL(window.location.href);
+        currentUrl.searchParams.set('lang', lang);
+        window.history.pushState({ lang }, document.title, currentUrl.href);
+
         console.log("Language set to:", lang);
     };
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const langFromUrl = urlParams.get('lang')?.toLowerCase();
+    const storedLang = localStorage.getItem('lang');
+
+    let initialLang = 'en';
+
+    if (langFromUrl && supportedLangs.includes(langFromUrl)) {
+        initialLang = langFromUrl;
+        localStorage.setItem('lang', initialLang);
+    } else if (storedLang && supportedLangs.includes(storedLang)) {
+        initialLang = storedLang;
+    } else {
+        const browserLang = navigator.language?.split('-')[0];
+        if (supportedLangs.includes(browserLang)) {
+            initialLang = browserLang;
+            localStorage.setItem('lang', browserLang);
+        }
+    }
+
+    setLanguage(initialLang);
+
     document.querySelectorAll('[data-set-lang]').forEach(btn => {
         btn.addEventListener('click', () => {
-        const lang = btn.getAttribute('data-set-lang');
-        setLanguage(lang);
+            const selected = btn.getAttribute('data-set-lang');
+            setLanguage(selected);
+            window.location.reload(); // Optional: reload for language text update
         });
     });
 
-    // Init on load
-    const saved = localStorage.getItem('lang') || 'en';
-    setLanguage(saved);
 
-    function shareOrCopy() {
+    const shareOrCopy = () => {
         if (typeof goatcounter !== 'undefined') {
-            goatcounter.count({
-            path: '/share-click',
-            title: 'Share button clicked'
-            });
+            goatcounter.count({ path: '/share-click', title: 'Share button clicked' });
         }
 
         const shareData = {
@@ -36,18 +64,18 @@ document.addEventListener('DOMContentLoaded', () => {
             url: location.href
         };
 
-        if (navigator.share) {
+        const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+        if (navigator.share && isMobileDevice) {
             navigator.share(shareData).catch(console.error);
         } else if (navigator.clipboard) {
-            navigator.clipboard.writeText(location.href).then(() => {
-            showShareToast();
-            });
+            navigator.clipboard.writeText(location.href).then(showShareToast);
         } else {
             alert('Sharing not supported on this device');
         }
     }
 
-    function showShareToast() {
+    const showShareToast = () => {
         const msg = document.getElementById('shareFallbackMsg');
         if (!msg) return;
         msg.style.display = 'block';
@@ -57,4 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => msg.style.display = 'none', 300);
         }, 2500);
     }
+
+    const shareLink = document.getElementById('shareLink');
+    if (shareLink) { // Check if the element exists
+        shareLink.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the default link behavior (jumping to #)
+            shareOrCopy();
+        });
+    }
+
+    document.querySelectorAll('a[href$=".pdf"], a[href$=".apk"]').forEach(link => {
+        link.addEventListener('click', () => {
+            const path = '/download/' + link.getAttribute('href').split('/').pop();
+            goatcounter.count({ path });
+        });
+    });
 });

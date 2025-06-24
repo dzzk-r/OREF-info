@@ -2,7 +2,7 @@
 
 This project includes an offline-ready Android APK generated using [Bubblewrap](https://github.com/GoogleChromeLabs/bubblewrap), wrapping the PWA at:
 
-🔗 https://dzzk-r.github.io/OREF-info/?v=5.1
+🔗 https://dzzk-r.github.io/OREF-info/?v=6.0.0-beta
 
 ### 🔧 Configuration
 

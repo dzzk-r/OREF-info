@@ -47,3 +47,5 @@ store_icon.png
 # ─── Security ─────────────────────────────────────────
 # Android signing key (DO NOT TRACK)
 android.keystore
+cert.pem
+key.pem
