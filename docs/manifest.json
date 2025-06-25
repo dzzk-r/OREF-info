@@ -1,7 +1,8 @@
 {
+  "id": "/index.html?v=6.1",
   "name": "OREF Info",
   "short_name": "OREF",
-  "start_url": "./index.html?v=6.0.0-beta",
+  "start_url": "./index.html?v=6.1",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0055ff",
@@ -20,6 +21,21 @@
       "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/screenshot_wide_1.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Main Page"
+    },
+    {
+      "src": "/img/screenshot_mobile_1.png",
+      "sizes": "640x1190",
+      "type": "image/png",
+      "label": "Main Page"
     }
   ]
 }
