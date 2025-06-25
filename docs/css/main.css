@@ -182,7 +182,6 @@ section a span.active-lang {
 
     .slides section.qr {
         min-height: calc(100vh - 40px);
-        max-width: 1000px;
     }
 }
 
