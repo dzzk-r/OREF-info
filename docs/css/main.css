@@ -56,10 +56,12 @@ section a span.active-lang {
         margin: auto
     }
 
-    .slides section,
+    .slides section {
+        width: auto
+    }
+
     .slides section img {
         max-width: 600px;
-        width: auto
     }
 }
 
@@ -170,12 +172,17 @@ section a span.active-lang {
 
     .slides section,
     .slides section img {
-        max-width: 513px;
         width: auto;
+        max-width: 516px;
+    }
+
+    .slides section img {
+        max-width: 513px;
     }
 
     .slides section.qr {
         min-height: calc(100vh - 40px);
+        max-width: 1000px;
     }
 }
 
@@ -229,3 +236,57 @@ html[data-lang="en"] .poster-text {
 .slides section.oref-section img.oref-logo {
     max-width: 200px;
 }
+
+/* Slack form >>> */
+form#slack-form {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: #f9f9f9;
+    font-family: sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form#slack-form input[type="text"],
+form#slack-form input[type="email"],
+form#slack-form textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form#slack-form button {
+    padding: 0.75em 1.25em;
+    background-color: #0078d7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form#slack-form button:hover {
+    background-color: #005fa3;
+}
+
+#status {
+    width: inherit;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#status.fade-out {
+    opacity: 0;
+}
+/* <<< Slack Form */
