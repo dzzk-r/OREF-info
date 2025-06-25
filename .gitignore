@@ -49,3 +49,11 @@ store_icon.png
 android.keystore
 cert.pem
 key.pem
+
+# Slack Proxy
+/.slack-proxy/node_modules/
+/.slack-proxy/.wrangler/
+/.slack-proxy/dist/
+/.slack-proxy/.env
+/.slack-proxy/.env.local
+/.slack-proxy/.cache/

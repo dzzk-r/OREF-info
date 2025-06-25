@@ -100,4 +100,56 @@ document.addEventListener('DOMContentLoaded', () => {
             goatcounter.count({ path });
         });
     });
+
+    document.getElementById('slack-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const message = document.getElementById('message').value;
+        const statusDiv = document.getElementById('status');
+        const button = this.querySelector('button');
+
+        // Clear any old status
+        statusDiv.textContent = '';
+        statusDiv.classList.remove('fade-out');
+
+        // Disable button and show sending status
+        button.disabled = true;
+        button.textContent = 'Sending…';
+
+        try {
+            const response = await fetch('https://oref-slack-proxy.daniel-workload.workers.dev/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({ message }),
+            });
+
+            if (response.ok) {
+                statusDiv.textContent = '✅ Message sent to Slack!';
+                document.getElementById('slack-form').reset();
+            } else {
+                statusDiv.textContent = `❌ Error: ${response.statusText}`;
+            }
+
+            // Smooth scroll to status
+            statusDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Fade-out timing
+            setTimeout(() => {
+                statusDiv.classList.add('fade-out');
+            }, 14000);
+
+            setTimeout(() => {
+                statusDiv.textContent = '';
+                statusDiv.classList.remove('fade-out');
+            }, 15000);
+
+        } catch (err) {
+            statusDiv.textContent = `❌ Exception: ${err.message}`;
+            statusDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } finally {
+            // Re-enable button
+            button.disabled = false;
+            button.textContent = 'Send';
+        }
+    });
 });
