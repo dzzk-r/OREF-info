@@ -1,8 +1,8 @@
 {
-  "id": "/index.html?v=6.1",
+  "id": "/index.html?v=6.2",
   "name": "OREF Info",
   "short_name": "OREF",
-  "start_url": "./index.html?v=6.1",
+  "start_url": "./index.html?v=6.2",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0055ff",
